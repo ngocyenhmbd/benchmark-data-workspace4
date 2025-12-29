@@ -1,0 +1,256 @@
+File "./theories/Init/Logic.v", line 416, characters 6-56:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Reals/RiemannInt.v", line 742, characters 2-159:
+Warning: Tactician's tactical decomposition crashed. Please report.
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 238, characters 1-32:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 300, characters 1-39:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 381, characters 1-48:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 804, characters 1-25:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 1249, characters 1-26:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 1369, characters 1-24:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/btauto/Algebra.v", line 475, characters 4-59:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+enough (Pos.max (Pos.succ i) i0 = i0) as <-; intuition
+enough (_tmp_tactician0 : Pos.max (Pos.succ i) i0 = i0);
+ [ intropattern subst <- _tmp_tactician0; idtac | .. ]; intuition
+
+File "./theories/ZArith/Zpow_facts.v", line 26, characters 7-38:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/MSets/MSetDecide.v", line 498, characters 5-15:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/FSets/FSetDecide.v", line 790, characters 11-19:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/FSets/FSetCompat.v", line 333, characters 9-54:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/FSets/FSetPositive.v", line 319, characters 9-25:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros s x y ->
+intros s;
+ (intros x;
+   (intros y;
+     (intros _tmp_tactician0; (intropattern subst -> _tmp_tactician0; idtac))))
+
+File "./theories/FSets/FSetPositive.v", line 479, characters 9-31:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/FSets/FSetPositive.v", line 548, characters 9-33:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/FSets/FSetPositive.v", line 551, characters 9-33:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/FSets/FSetPositive.v", line 579, characters 4-11:
+Warning: Benchmarking error: Forked process exited with code 1
+File "./plugins/setoid_ring/Ncring_initial.v", line 168, characters 8-40:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/DecimalPos.v", line 377, characters 1-73:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Pos.of_uint d) eqn:Hd, (Pos.of_uint d') eqn:Hd'; intros [=]
+<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ <recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ (intros _tmp_tactician0; (first
+   [ discriminate _tmp_tactician0; idtac
+   | injection _tmp_tactician0 as; idtac
+   | intro_equality_clear _tmp_tactician0; idtac
+   | intro_equality_hnf _tmp_tactician0; idtac ]))
+
+File "./theories/NArith/Ndigits.v", line 289, characters 2-13:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/ZArith/Zdiv.v", line 591, characters 2-47:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/ZArith/Zcomplements.v", line 67, characters 2-95:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+enough (H : Q (Z.abs p)) by
+ (destruct (Zabs_dec p) as [->| ->]; elim H; auto with zarith)
+enough (H : Q (Z.abs p));
+ [ <recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+    [ ..
+    | intropattern subst -> _tmp_tactician0; idtac
+    | intropattern subst -> _tmp_tactician0; idtac ]; 
+    elim H; auto with zarith
+ | .. ]
+
+File "./theories/ZArith/Zcomplements.v", line 74, characters 4-48:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Zabs_dec m) as [->| ->]; trivial
+<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ [ ..
+ | intropattern subst -> _tmp_tactician0; idtac
+ | intropattern subst -> _tmp_tactician0; idtac ]; trivial
+
+File "./theories/ZArith/Zcomplements.v", line 77, characters 6-50:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Zabs_dec m) as [->| ->]; trivial
+<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ [ ..
+ | intropattern subst -> _tmp_tactician0; idtac
+ | intropattern subst -> _tmp_tactician0; idtac ]; trivial
+
+File "./theories/ZArith/Zcomplements.v", line 88, characters 2-93:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+enough (Q (Z.abs p)) by
+ (destruct (Zabs_dec p) as [->| ->]; elim H; auto with zarith)
+enough (Q (Z.abs p));
+ [ <recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+    [ ..
+    | intropattern subst -> _tmp_tactician0; idtac
+    | intropattern subst -> _tmp_tactician0; idtac ]; 
+    elim H; auto with zarith
+ | .. ]
+
+File "./theories/ZArith/Zcomplements.v", line 98, characters 6-50:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Zabs_dec m) as [->| ->]; trivial
+<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ [ ..
+ | intropattern subst -> _tmp_tactician0; idtac
+ | intropattern subst -> _tmp_tactician0; idtac ]; trivial
+
+File "./theories/ZArith/Zorder.v", line 49, characters 2-59:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/ZArith/Znat.v", line 656, characters 1-13:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/ZArith/Znat.v", line 907, characters 1-14:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 1442, characters 7-12:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Sets/Finite_sets_facts.v", line 45, characters 4-33:
+Warning: Tactician's tactical decomposition crashed. Please report.
+File "./theories/Sets/Powerset_Classical_facts.v", line 158, characters 4-43:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/NArith/BinNat.v", line 631, characters 1-10:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 1751, characters 4-74:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/PArith/Pnat.v", line 235, characters 1-7:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/Arith/Compare_dec.v", line 217, characters 1-21:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Arith/Between.v", line 160, characters 6-52:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (exists_in_int k (S l)) as (l', [], ?)
+<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ [ .. | destruct _tmp_tactician0 as []; idtac ]
+
+File "./theories/Arith/Div2.v", line 71, characters 1-46:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./plugins/ssr/ssrbool.v", line 606, characters 7-17:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./plugins/ssr/ssrbool.v", line 675, characters 42-63:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Classes/Morphisms.v", line 180, characters 9-45:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Classes/Morphisms.v", line 262, characters 4-20:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Classes/Morphisms.v", line 458, characters 9-16:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Classes/CMorphisms.v", line 287, characters 4-21:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Logic/JMeq.v", line 119, characters 0-11:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Wellfounded/Inverse_Image.v", line 36, characters 4-47:
+Warning:
+Benchmarking error: Cap'n Proto protocol error while communicating with proving server. No response was received.
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+

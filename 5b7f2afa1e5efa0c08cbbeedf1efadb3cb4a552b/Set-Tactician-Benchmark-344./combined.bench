@@ -1,0 +1,1230 @@
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Conjunction.proj2	344	7.666229	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 v1 : Prop) (v2 : v0 /\ v1) => match v2 as v3 in (_ /\ _) return v1 with | conj v3 v4 => (fun (v3 : v0) (v4 : v1) => v4) v3 v4 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_iff_compat_l	344	2.545934	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_iff_compat_r	344	1.517444	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.imp_iff_compat_r	344	1.361430	1	1	0	synth with cache (only 1: refine (fun (v0 v1 v2 : Prop) (v3 : v1 <-> v2) => match v3 as v4 in (_ /\ _) return ((forall v5 : v1, v0) <-> (forall v5 : v2, v0)) with | conj v4 v5 => (fun (v4 : forall v5 : v1, v2) (v5 : forall v6 : v2, v1) => conj (fun (v6 : forall v7 : v1, v0) (v7 : v2) => v6 (v5 v7)) (fun (v6 : forall v7 : v2, v0) (v7 : v1) => v6 (v4 v7))) v4 v5 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_comm	344	1.575712	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.iff_and	344	1.034327	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : Prop) (v2 : v0 <-> v1) => match v2 as v3 in (_ /\ _) return ((forall v4 : v0, v1) /\ (forall v4 : v1, v0)) with | conj v3 v4 => (fun (v3 : forall v4 : v0, v1) (v4 : forall v5 : v1, v0) => conj v3 v4) v3 v4 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.iff_to_and	344	1.790825	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Logic_lemmas.equality.not_eq_sym	344
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.f_equal2	344	2.441676	1	1	0	synth with cache (only 1: refine (fun (v0 v1 v2 : Type) (v3 : forall (v4 : v0) (v5 : v1), v2) (v4 v5 : v0) (v6 v7 : v1) (v8 : v4 = v5) => match v8 as v10 in (_ = v9) return (forall v11 : v6 = v7, v3 v4 v6 = v3 v9 v7) with | eq_refl => fun v9 : v6 = v7 => match v9 as v11 in (_ = v10) return (v3 v4 v6 = v3 v4 v10) with | eq_refl => eq_refl end end)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.eq_refl_map_distr	344	2.106310	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : Type) (v2 : v0) (v3 : forall v4 : v0, v1) => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.iff_stepl	344	2.213187	1	1	0	synth with cache (only 1: refine (fun (v0 v1 v2 : Prop) (v3 : v0 <-> v1) => match v3 as v4 in (_ /\ _) return (forall v5 : v0 <-> v2, v2 <-> v1) with | conj v4 v5 => (fun (v4 : forall v5 : v0, v1) (v5 : forall v6 : v1, v0) (v6 : v0 <-> v2) => match v6 as v7 in (_ /\ _) return (v2 <-> v1) with | conj v7 v8 => (fun (v7 : forall v8 : v0, v2) (v8 : forall v9 : v2, v0) => conj (fun v9 : v2 => v4 (v5 (v4 (v8 v9)))) (fun v9 : v1 => v7 (v5 v9))) v7 v8 end) v4 v5 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZDivTrunc.ZQuotProp.rem_eq	344	15.713492	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZDivTrunc.ZQuotProp.quot_1_l	344	14.359220	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZDivTrunc.ZQuotProp.rem_quot	344	16.393780	2	1
+coq-tactician-stdlib.8.11.dev	Coq.omega.OmegaLemmas.Zred_factor4	344	31.925636	4	2
+coq-tactician-stdlib.8.11.dev	Coq.omega.OmegaLemmas.new_var	344	32.113698	1	1	0	synth with cache (only 1: refine (fun v0 : @Z => ex_intro (fun v1 : @Z => v0 = v1) v0 eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.omega.OmegaLemmas.OMEGA6	344	33.263683	4	2
+coq-tactician-stdlib.8.11.dev	Coq.omega.OmegaLemmas.OMEGA9	344	36.764338	4	2
+coq-tactician-stdlib.8.11.dev	Coq.omega.OmegaLemmas.OMEGA12	344	33.134030	4	2
+coq-tactician-stdlib.8.11.dev	Coq.omega.OmegaLemmas.OMEGA17	344	30.108140	4	2
+coq-tactician-stdlib.8.11.dev	Coq.omega.OmegaLemmas.OMEGA20	344	31.831153	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ArithProp.lt_minus_O_lt	344	67.352772	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Cos_rel.pow_sqr	344	86.342131	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RinvN_pos	344	93.843412	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P3	344	94.907468	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P5	344	90.025721	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.FTC_P1	344	94.262006	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P31	344	98.519848	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P32	344	91.962458	2	1
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.P0Z_correct	344	88.288130	4	2
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Rsth	344	104.900670	2	1
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Q_one_zero	344	244.561310	1247	43
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Rings_R.Rsth	344	106.160107	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Un_cv_ext	344	95.656504	1	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.ub_opp	344	96.289372	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.tech_opp_tan	344	94.871862	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P15	344	90.409284	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P23	344	94.892823	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P37	344	96.509014	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.P_Rmin	344	86.796171	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_1	344	94.879861	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.tan_2PI	344	90.578956	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_PI4	344	90.189057	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_cos5PI4	344	88.695044	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.Rgt_3PI2_0	344	91.466969	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.Rsqr_sin_cos_d_one	344	89.089002	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rgeom.isometric_rot_trans	344	90.447128	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rgeom.isometric_trans_rot	344	90.857177	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_reg.derivable_cos	344	84.696269	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_def.cosn_no_R0	344	213.034964	1247	43
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_def.exist_cos	344	84.136220	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqrt.sqrt_0	344	82.369051	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqrt.sqrt_eq_0	344	80.498908	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqrt.sqrt_Rsqr	344	85.972106	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqrt.sqrt_mult	344	79.000691	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rsqrt_def.pow_2_n_neq_R0	344	162.008422	1247	43
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtopology.interior_P1	344	84.767809	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtopology.complementary_P1	344	78.300505	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtopology.open_set_P1	344	82.380321	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtopology.neighbourhood_P1	344	83.129423	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtopology.open_set_P4	344	81.526397	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtopology.restriction_family	344	83.380377	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.continuity_pt_plus	344	83.565070	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.continuity_pt_inv	344	77.416134	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.div_eq_inv	344	79.280506	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.continuity_minus	344	82.662245	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.continuity_const	344	75.885876	1	1	0	synth with cache (only 1: refine ((fun (v0 : forall v1 : @R, @R) (v1 : constant v0) (v2 : @R) => continuity_pt_const v0 v2 v1) : forall (v0 : forall v1 : @R, @R) (v1 : constant v0), continuity v0)).
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.continuity_inv	344	79.893075	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derive_pt_eq_1	344	83.430127	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derivable_pt_Rsqr	344	75.960667	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derivable_minus	344	82.712772	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derivable_mult	344	76.061749	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derivable_scal	344	82.474472	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derivable_comp	344	79.865021	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derive_pt_const	344	76.480909	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derive_pt_id	344	81.045287	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derive_pt_Rsqr	344	79.022127	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Cauchy_prod.sum_N_predN	344	77.397836	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rlimit.mul_factor_gt_f	344	80.274473	2	1
+coq-tactician-stdlib.8.11.dev	Coq.micromega.Fourier_util.Rle_zero_pos_plus1	344	82.318829	2	1
+coq-tactician-stdlib.8.11.dev	Coq.micromega.RMicromega.Rinv_1	344	76.415250	2	1
+coq-tactician-stdlib.8.11.dev	Coq.micromega.RMicromega.Qle_true	344	73.911450	2	1
+coq-tactician-stdlib.8.11.dev	Coq.micromega.RMicromega.Q2R_0	344	74.236369	2	1
+coq-tactician-stdlib.8.11.dev	Coq.micromega.RMicromega.Q2R_m_Proper	344	72.424232	2	1
+coq-tactician-stdlib.8.11.dev	Coq.micromega.RMicromega.Reval_nformula_dec	344	75.846262	2	1
+coq-tactician-stdlib.8.11.dev	Coq.micromega.RMicromega.RWeakChecker_sound	344	77.135713	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.SeqProp.cauchy_min	344	78.158886	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.SeqProp.maj_cv	344	82.308144	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.SeqProp.min_cv	344	76.067920	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RList.RList_P14	344	79.376004	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RList.RList_P19	344	81.131045	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RList.RList_P22	344	77.563454	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rseries.sequence.Un_cv_crit	344	79.040188	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rfunctions.INR_fact_neq_0	344	63.292646	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rfunctions.pow1	344	62.033448	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rfunctions.Rsqr_pow2	344	59.596364	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rfunctions.PowerRZ.powerRZ_lt	344	62.960428	3	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rfunctions.R_dist_mult_l	344	62.788267	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rminmax.R.opp_min_distr	344	80.819848	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rminmax.R.minus_max_distr_r	344	79.376288	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rminmax.R.minus_min_distr_l	344	80.992405	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqr.Rsqr_1	344	66.095466	8	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqr.Rsqr_incr_0_var	344	62.437553	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqr.Rsqr_incrst_1	344	59.618571	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqr.Rsqr_le_abs_0	344	63.345691	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqr.Rsqr_inv	344	62.193889	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rmin_case	344	59.570115	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rmin_Rgt_r	344	63.296174	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rmin_l	344	62.625662	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rmin_r	344	62.667777	1	1	0	synth with cache (only 1: refine (fun v0 v1 : @R => match Rle_dec v0 v1 as v2 in ({_} + {_}) return (match v2 as v3 in ({_} + {_}) return (@R) with | left v3 => (fun v3 : v0 <= v1 => v0) v3 | right v3 => (fun v3 : ~ v0 <= v1 => v1) v3 end <= v1) with | left v2 => (fun v2 : v0 <= v1 => v2) v2 | right v2 => (fun v2 : ~ v0 <= v1 => Req_ge_sym v1 v1 eq_refl) v2 end : Rmin v0 v1 <= v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rle_min_compat_r	344	62.728876	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rle_min_compat_l	344	63.485441	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rmin_glb	344	59.733048	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rmin_glb_lt	344	62.691197	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rmax_l	344	62.840883	1	1	0	synth with cache (only 1: refine (fun v0 v1 : @R => match Rle_dec v0 v1 as v2 in ({_} + {_}) return (v0 <= match v2 as v3 in ({_} + {_}) return (@R) with | left v3 => (fun v3 : v0 <= v1 => v1) v3 | right v3 => (fun v3 : ~ v0 <= v1 => v0) v3 end) with | left v2 => (fun v2 : v0 <= v1 => v2) v2 | right v2 => (fun v2 : ~ v0 <= v1 => Req_ge_sym v0 v0 eq_refl) v2 end : v0 <= Rmax v0 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rmax_lub	344	63.588229	1	1	0	synth with cache (only 1: refine (fun (v0 v1 v2 : @R) (v3 : v0 <= v2) (v4 : v1 <= v2) => match Rle_dec v0 v1 as v5 in ({_} + {_}) return (match v5 as v6 in ({_} + {_}) return (@R) with | left v6 => (fun v6 : v0 <= v1 => v1) v6 | right v6 => (fun v6 : ~ v0 <= v1 => v0) v6 end <= v2) with | left v5 => (fun v5 : v0 <= v1 => v4) v5 | right v5 => (fun v5 : ~ v0 <= v1 => v3) v5 end : Rmax v0 v1 <= v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rcase_abs	344	60.515604	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rabs_no_R0	344	62.951529	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rabs_left1	344	64.177027	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rabs_pos	344	64.555782	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rabs_Rabsolu	344	62.332376	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_Ifp.fp_nat	344	62.000805	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_Ifp.R0_fp_O	344	61.082235	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.DiscrR.Rlt_R0_R2	344	76.437089	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rgt_ge	344	61.851366	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rnot_le_gt	344	58.032404	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : @R) (v2 : ~ v0 <= v1) => Rnot_le_lt v0 v1 v2 : v0 > v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rge_not_lt	344	60.896761	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rle_not_gt	344	57.338387	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rge_not_gt	344	60.620010	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Req_le_sym	344	60.275235	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Req_ge_sym	344	58.535308	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rgt_asym	344	57.480691	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rge_antisym	344	59.193083	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rle_le_eq	344	59.084631	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rgt_ge_trans	344	60.352867	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rle_or_lt	344	61.617564	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_eq_compat_r	344	58.237509	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_eq_reg_r	344	61.197061	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_0_r_uniq	344	60.354415	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_eq_R0	344	58.283191	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_1_r	344	63.886246	8	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_eq_0_compat	344	59.293352	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rsqr_0_uniq	344	61.058678	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Ropp_neq_0_compat	344	59.516604	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_gt_compat	344	57.325413	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_ge_gt_compat	344	61.270739	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.sum_inequa_Rle_lt	344	58.696399	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_le_reg_r	344	59.793327	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_ge_reg_neg_r	344	57.676970	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Ropp_gt_contravar	344	60.125664	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : @R) (v2 : v1 > v0) => Ropp_lt_gt_contravar v0 v1 v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Ropp_le_ge_contravar	344	60.355293	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Ropp_le_contravar	344	57.713779	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Ropp_le_cancel	344	60.715523	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Ropp_ge_cancel	344	56.811549	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_lt_compat_r	344	60.922136	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_le_compat	344	57.738179	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_gt_0_lt_compat	344	60.014497	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_lt_0_compat	344	60.560626	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_lt_reg_r	344	61.495766	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_gt_reg_l	344	57.257039	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rminus_gt_0_lt	344	58.787890	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_sqr_eq_0_l	344	57.353343	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rle_0_1	344	59.341388	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rle_lt_0_plus_1	344	58.853241	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.lt_0_INR	344	57.373042	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.INR_IZR_INZ	344	61.157535	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.eq_IZR	344	61.177902	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.le_IZR_R1	344	56.634902	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_le_pos	344	59.865334	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rinv_le_contravar	344	57.787197	2	1
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.RealField.Rfield	344	60.739629	2	1
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.RealField.Rlt_0_2	344	58.670796	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Raxioms.Rrepr_1	344	61.096726	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Raxioms.Rplus_comm	344	58.115257	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Ring63.Int63Ring	344	75.747690	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveRealsMorphisms.CRmorph_le	344	53.587403	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveRealsMorphisms.CRmorph_le_inv	344	51.059647	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveRealsMorphisms.CRmorph_one	344	52.638008	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Cyclic63.P	344	74.396555	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (λ (v0 v1 v2 : Prop) (v3 : v0) (v4 : ∀ v5 : v1, v2) (v5 : ∀ v6 : v0, v1), let v6 : v1 := v5 v3 in let v7 : v2 := v4 v6 in v7)).
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.can_inj	344	71.809558	27	6
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.to_Z_inj	344	61.561778	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.eqb_complete	344	64.386821	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.lebP	344	63.017021	3	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.is_zero_spec	344	60.347610	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.succ_spec	344	63.673634	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.eqm_sub	344	66.939995	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.lsl0_r	344	63.946944	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.is_even_lsl_1	344	64.383266	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.land0_r	344	63.216485	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.lorC	344	68.558789	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.lxor0_r	344	60.936377	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_S	344	73.627341	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Recr.recr_aux_eqn	344
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Recr.recrbis_equiv	344
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Phi.phibis_aux_equiv	344
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_inv_double	344
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.wB_pos	344	73.123393	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_zdigits	344	73.598345	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_more_than_1_digit	344	74.165043	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_succ_c	344
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_opp	344	73.129697	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_pred	344
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_square_c	344	72.144611	1	1	0	synth with cache (only 1: refine (fun v0 : @int31 => spec_mul_c v0 v0)).
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_head00	344	71.836973	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_tail00	344	76.052527	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.wB_pos	344	76.159172	5	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_zdigits	344	72.216760	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_compare	344	72.586151	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_sub	344	75.103208	5	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_mul	344	72.169312	5	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_gcd_gt	344	73.157975	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.gt_wB_0	344	72.406724	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFullAVL.AvlProofs.Elt.empty_avl	344	98.819654	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFullAVL.AvlProofs.Elt.create_height	344	102.841105	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFullAVL.AvlProofs.Mapi.mapi_height	344	94.435788	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFullAVL.IntMake.Elt.add_3	344	101.522741	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFullAVL.IntMake_ord.eq_refl	344	114.421539	2	1
+coq-tactician-stdlib.8.11.dev	Coq.btauto.Reflect.Translation.poly_of_formula_sound	344	59.258831	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_morph_T	344	47.882911	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_0_l	344	47.170847	8	1
+coq-tactician-stdlib.8.11.dev	Coq.btauto.Algebra.Decidable_sound	344	63.388107	1	1	0	synth with cache (only 1: refine (fun (v0 : Prop) (v1 : Decidable v0) (v2 : Decidable_witness = @true) => let v3 : Decidable_witness = @true <-> v0 := Decidable_spec in match v3 as v4 in (_ /\ _) return v0 with | conj v4 v5 => (fun (v4 : forall v5 : Decidable_witness = @true, v0) (v5 : forall v6 : v0, Decidable_witness = @true) => v4 v2) v4 v5 end)).
+coq-tactician-stdlib.8.11.dev	Coq.btauto.Algebra.Decidable_complete	344	64.421923	1	1	0	synth with cache (only 1: refine (fun (v0 : Prop) (v1 : Decidable v0) (v2 : v0) => let v3 : Decidable_witness = @true <-> v0 := Decidable_spec in match v3 as v4 in (_ /\ _) return (Decidable_witness = @true) with | conj v4 v5 => (fun (v4 : forall v5 : Decidable_witness = @true, v0) (v5 : forall v6 : v0, Decidable_witness = @true) => v5 v2) v4 v5 end)).
+coq-tactician-stdlib.8.11.dev	Coq.btauto.Algebra.Decidable_complete_alt	344	175.593128	1247	43
+coq-tactician-stdlib.8.11.dev	Coq.btauto.Algebra.Computational.Decidable_PosLt_obligation_1	344	65.737532	4	2
+coq-tactician-stdlib.8.11.dev	Coq.btauto.Algebra.Computational.Decidable_PosLe_obligation_1	344	64.510662	4	2	0.2	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @positive => Pos.leb_le v0 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qpower.Qpower_pos_positive	344	63.294864	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qpower.Qpower_opp	344	62.625239	1	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zquot.Zquot_0_r	344	64.540224	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zquot.Zrem_0_l	344	66.919235	1	1	0	synth with cache (only 1: refine (Zegal_left 0 0 (Zmod_0_l 0))).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zquot.Zquot_lt_upper_bound	344	62.147184	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zquot.Zquot_le_lower_bound	344	61.269398	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpow_facts.Zpower_pos_1_l	344
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpow_facts.Zmult_power	344	63.939032	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpow_facts.Zpower2_lt_lin	344	62.386498	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpow_facts.Zpower2_le_lin	344	64.715983	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpow_facts.Zpow_mod_correct	344	63.644308	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Z_to_binary_Sn_z	344	60.789659	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Z_to_two_compl_Sn_z	344	64.898328	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_mem_2	344	52.399894	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.mem_3	344	52.533229	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.mem_4	344	51.381595	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_refl	344	49.410905	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.remove_equal	344	51.865599	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_remove	344	47.881339	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.singleton_mem_3	344	48.683681	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_assoc	344	53.901441	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_inter_1	344	49.937507	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_add_1	344	52.925608	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.Fold.fold_add	344	52.308263	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.Fold.remove_fold_2	344	50.861328	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.add_cardinal_2	344	49.032969	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.subset_cardinal	344	48.041332	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.partition_filter_2	344	50.947603	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool'.exists_mem_1	344	52.147269	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.CRealLe_refl	344	45.106447	1	1	0	synth with cache (only 1: refine (fun v0 : @CReal => (fun v1 : v0 < v0 => let v2 : v0 <= v0 := CRealLt_asym v0 v0 v1 in False_ind (@False) (v2 v1)) : v0 <= v0)).
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.CReal_le_trans	344	46.393041	1	1	0	synth with cache (only 1: refine (fun (v0 v1 v2 : @CReal) (v3 : v0 <= v1) (v4 : v1 <= v2) => (fun v5 : v2 < v0 => v4 (CReal_lt_le_trans v2 v0 v1 v5 v3)) : v0 <= v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.CRealGe_morph_Proper	344	47.032626	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.CRealLt_proper_l	344	49.668320	1	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.CRealLt_proper_r	344	49.140393	1	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.CRealLe_proper_r	344	47.563497	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.CReal_plus_opp_l	344	47.616271	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.CReal_plus_proper_l	344	50.027538	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.mem_eq	344	49.219776	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.add_mem_2	344	50.455947	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.remove_mem_1	344	50.906071	3	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.mem_4	344	48.892111	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.equal_trans	344	50.714569	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.subset_refl	344	48.066554	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.subset_equal	344	51.126971	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.remove_add	344	48.702845	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.singleton_mem_2	344	54.830264	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.add_union_singleton	344	48.303263	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.union_subset_1	344	48.029188	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.inter_equal_1	344	50.990883	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.union_inter_2	344	51.594685	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.BasicProperties.inter_add_2	344	50.131971	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.union_cardinal	344	48.568227	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetEqProperties.WEqProperties_fun.Bool.partition_filter_1	344	49.897439	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_trans	344	47.896297	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_equal	344	50.560097	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_empty	344	47.494505	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_add_2	344	52.706547	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_subset_3	344	49.651435	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.elements_empty	344	45.837532	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.Fold.fold_spec_right	344	50.212753	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : @t) (v1 : Type) (v2 : v1) (v3 : forall (v4 : @elt) (v5 : v1), v1) => eq_ind_r (fun v4 : v1 => v4 = fold_right v3 v2 (rev (elements v0))) (eq_sym (fold_left_rev_right v3 (elements v0) v2)) (fold_spec v0 v2 v3))).
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.Fold.set_induction	344	46.248424	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.Fold.set_induction_bis	344	48.406873	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.Fold.fold_1b	344	47.373805	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.Fold.Fold_More.fold_commutes	344	50.854807	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.Fold.Fold_More.fold_add	344	46.509571	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetProperties.WPropertiesOn.Fold.Fold_More.add_fold	344	50.065834	4	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcabs.Qcabs_neg	344	47.141814	5	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcabs.Qcabs_opp	344	47.574545	3	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.ZMicromega.eval_pol_Pc	344	54.294238	1	1	0	synth with cache (only 1: refine (fun (v0 : PolEnv (@Z)) (v1 : @Z) => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.micromega.QMicromega.QWeakChecker_sound	344	63.175393	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.subset_refl	344	49.497093	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.in_subset	344	47.671928	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_subset_2	344	49.643937	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.of_list_3	344	47.105732	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.Fold.fold_rec_nodep	344	46.293514	1	1	0	synth with cache (only 1: refine (fun (v0 : Type) (v1 : forall v2 : v0, Type) (v2 : forall (v3 : @elt) (v4 : v0), v0) (v3 : v0) (v4 : @t) (v5 : v1 v3) (v6 : forall (v7 : @elt) (v8 : v0) (v9 : In v7 v4) (v10 : v1 v8), v1 (v2 v7 v8)) => fold_rec_bis (P:=fun v7 : @t => v1) (f:=v2) (i:=v3) (fun (v7 v8 : @t) (v9 : v0) (v10 : v7 [=] v8) (v11 : v1 v9) => v11) v5 (fun (v7 : @elt) (v8 : v0) (v9 : @t) (v10 : In v7 v4) (v11 : ~ In v7 v9) (v12 : v1 v8) => v6 v7 v8 v10 v12))).
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.Fold.set_induction	344	45.891520	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.Fold.Fold_More.add_fold	344	49.236260	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.cardinal_inv_1	344	45.410297	1	1	0	synth with cache (only 1: refine (fun (v0 : @t) (v1 : cardinal v0 = 0) => (fun v2 : Empty v0 <-> cardinal v0 = 0 => CMorphisms.iff_flip_impl_subrelation (Empty v0) (cardinal v0 = 0) v2) (cardinal_Empty v0) v1)).
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.cardinal_inv_2b	344	51.049834	1	1	0	synth with cache (only 1: refine (fun v0 : @t => (let v1 : @nat := cardinal v0 in match v1 as v2 in nat return (forall (v3 : forall (v4 : @nat) (v5 : v2 = S v4), {v6 : @elt | In v6 v0}) (v4 : v2 <> 0), {v5 : @elt | In v5 v0}) with | 0 => fun (v2 : forall (v3 : @nat) (v4 : 0 = S v3), {v5 : @elt | In v5 v0}) (v3 : 0 <> 0) => let v4 : @False := let v5 : 0 = 0 := Logic.eq_refl in v3 v5 in (fun v5 : @False => False_rect {v6 : @elt | In v6 v0} v5) v4 | S v2 => (fun (v2 : @nat) (v3 : forall (v4 : @nat) (v5 : S v2 = S v4), {v6 : @elt | In v6 v0}) (v4 : S v2 <> 0) => v3 v2 Logic.eq_refl) v2 end) (cardinal_inv_2 (s:=v0)))).
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.cardinal_m_Proper	344	46.387340	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetProperties.WProperties_fun.singleton_cardinal	344	46.728805	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qabs.Qabs_Qmult	344	48.015588	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveReals.CRle_trans	344	46.901390	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveReals.CRplus_le_compat_l	344	48.729093	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveReals.CRinv_r	344	47.898883	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qround.Qfloor_comp_Proper	344	44.329214	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcanon.Qred_involutive	344	44.069161	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcanon.Qcge_alt	344	45.819953	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcanon.Qcopp_involutive	344	46.396224	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcanon.Qcdiv_mult_l	344	47.748208	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcanon.Qcle_trans	344	45.707636	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcanon.Qcpower_1	344	45.316915	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcanon.Qcft	344	44.817376	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFacts.WFacts_fun.IffSpec.add_neq_mapsto_iff	344	52.234455	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFacts.WFacts_fun.BoolSpec.remove_o	344	48.330939	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFacts.WFacts_fun.Equal_refl	344	48.517369	1	1	0	synth with cache (only 1: refine ((fun (v0 : Type) (v1 : t v0) (v2 : @key) => eq_refl) : forall (v0 : Type) (v1 : t v0), Equal v1 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFacts.WFacts_fun.Equal_trans	344	47.654023	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFacts.WProperties_fun.Elt.map_induction_bis	344	49.991707	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapFacts.WProperties_fun.Elt.Fold_More.fold_Empty	344	50.878325	5	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetDecide.WDecideOn.MSetDecideAuxiliary.eq_refl_iff	344
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapAVL.Raw.Proofs.Elt.MapsTo_In	344	78.196415	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapAVL.Raw.Proofs.Elt.In_alt	344	72.697165	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_right	344	76.188690	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapAVL.Raw.Proofs.Elt.empty_bst	344	73.481278	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : Type => BSLeaf v0 : bst (empty v0))).
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_in_iff	344	72.185599	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapAVL.IntMake.Elt.MapsTo_1	344	73.917977	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapAVL.IntMake.Elt.elements_1	344	77.578526	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapAVL.IntMake_ord.compare_end_Cmp	344	87.657187	8	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapAVL.IntMake_ord.eq_refl	344	86.059147	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetDecide.WDecide_fun.FSetDecideTestCases.test_In_singleton	344
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetCompat.Backport_Sets.lt_not_eq	344	50.017440	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetCompat.Update_WSets.Spec.mem_spec	344	47.311316	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetCompat.Update_WSets.Spec.equal_spec	344	50.852488	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetCompat.Update_WSets.Spec.singleton_spec	344	49.040625	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetCompat.Update_WSets.Spec.for_all_spec	344
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetFacts.WFactsOn.ImplSpec.mem_1	344	52.589750	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetFacts.WFactsOn.ImplSpec.mem_2	344	48.239910	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetFacts.WFactsOn.ImplSpec.equal_2	344	51.879341	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetFacts.WFactsOn.ImplSpec.subset_2	344	51.079285	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetFacts.WFactsOn.IffSpec.subset_iff	344	47.110283	5	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetFacts.WFactsOn.IffSpec.empty_iff	344	47.752770	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetFacts.WFactsOn.IffSpec.singleton_iff	344	52.458909	3	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetFacts.WFactsOn.SubsetSetoid	344	47.101291	4	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetFacts.WFactsOn.Empty_s_m	344	46.654630	1	1	0	synth with cache (only 1: refine ((fun (v0 v1 : @t) (v2 : flip (@Subset) v0 v1) => (fun v3 : Empty v0 => (fun v4 : @elt => (fun v5 : In v4 v1 => (fun v6 : forall v7 : In v4 v1, In v4 v0 => (fun v7 : In v4 v0 => (fun v8 : ~ In v4 v0 => (fun v9 : @False => v9) (v8 v7)) (v3 v4)) (v6 v5)) (v2 v4)) : ~ In v4 v1) : Empty v1) : impl (Empty v0) (Empty v1)) : Proper (@Subset --> @impl) (@Empty))).
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetFacts.WFacts_fun.IffSpec.In_eq_iff	344	50.019525	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetFacts.WFacts_fun.IffSpec.subset_iff	344	48.753157	5	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetFacts.WFacts_fun.IffSpec.remove_iff	344	49.179203	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetFacts.WFacts_fun.IffSpec.union_iff	344	48.137837	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetFacts.WFacts_fun.IffSpec.diff_iff	344	50.862478	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetFacts.WFacts_fun.IffSpec.elements_iff	344	48.155635	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetFacts.WFacts_fun.Subset_trans	344	46.124467	1	1	0	synth with cache (only 1: refine ((fun (v0 v1 v2 : @t) (v3 : forall (v4 : @elt) (v5 : In v4 v0), In v4 v1) (v4 : forall (v5 : @elt) (v6 : In v5 v1), In v5 v2) (v5 : @elt) (v6 : In v5 v0) => v4 v5 (v3 v5 v6)) : forall (v0 v1 v2 : @t) (v3 : v0 [<=] v1) (v4 : v1 [<=] v2), v0 [<=] v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalZ.to_int_inj	344	51.662074	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalZ.to_int_surj	344	49.907644	7	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapPositive.PositiveMap.A.CompcertSpec.gempty	344	49.795485	1	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapPositive.PositiveMap.A.CompcertSpec.gleaf	344	50.615673	1	1	0	synth with cache (only 1: refine @gempty).
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapPositive.PositiveMap.A.FMapSpec.find_1	344	49.961939	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapPositive.PositiveMap.A.FMapSpec.elements_3	344	49.110630	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapPositive.PositiveMap.gmapi	344	50.304866	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapPositive.PositiveMap.map_2	344	48.346574	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.mem_1	344	49.408924	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.subset_1	344	48.541002	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.equal_1	344	48.262326	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.lex_Opp	344
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.lt_spec.ct_lxl	344
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.lt_spec.ct_gxg	344
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.lt_spec.compare_x_Leaf	344
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.Heap.defs.leA_Tree_Node	344	41.450354	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.Heap.defs.low_trans	344	42.962701	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ncring_initial.ZMORPHISM.match_compOpp	344
+coq-tactician-stdlib.8.11.dev	Coq.Classes.DecidableClass.Decidable_sound	344	11.703495	1	1	0	synth with cache (only 1: refine (fun (v0 : Prop) (v1 : Decidable v0) (v2 : Decidable_witness = @true) => let v3 : Decidable_witness = @true <-> v0 := Decidable_spec in match v3 as v4 in (_ /\ _) return v0 with | conj v4 v5 => (fun (v4 : forall v5 : Decidable_witness = @true, v0) (v5 : forall v6 : v0, Decidable_witness = @true) => v4 v2) v4 v5 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Classes.DecidableClass.Decidable_complete	344	7.879439	1	1	0	synth with cache (only 1: refine (fun (v0 : Prop) (v1 : Decidable v0) (v2 : v0) => let v3 : Decidable_witness = @true <-> v0 := Decidable_spec in match v3 as v4 in (_ /\ _) return (Decidable_witness = @true) with | conj v4 v5 => (fun (v4 : forall v5 : Decidable_witness = @true, v0) (v5 : forall v6 : v0, Decidable_witness = @true) => v5 v2) v4 v5 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Classes.DecidableClass.Decidable_eq_bool_obligation_1	344	38.151854	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @bool => eqb_true_iff v0 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.micromega.ZCoeff.InitialMorphism.rlt_morph_Proper	344	54.229835	3	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.ZCoeff.InitialMorphism.phi_pos1_succ	344	53.164929	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.DecidableTypeEx.PairDecidableType.eq_refl	344	48.390605	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalN.Unsigned.of_to	344	45.157857	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalN.Unsigned.to_of	344	48.359153	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalN.Unsigned.to_uint_surj	344	194.863731	5123	97
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalN.Signed.to_int_inj	344	47.346415	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.PermutSetoid.Permut.permut_cons	344	42.907712	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.PermutSetoid.Permut.permut_add_cons_inside	344	42.493737	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.PermutSetoid.Permut.permut_rev	344	44.158290	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.PermutSetoid.Permut.if_eqA_then	344	40.057392	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : @A) (v2 : Type) (v3 v4 : v2) (v5 : eqA v0 v1) => let v6 : {eqA v0 v1} + {~ eqA v0 v1} := eqA_dec v0 v1 in match v6 as v7 in ({_} + {_}) return (match v7 as v8 in ({_} + {_}) return v2 with | left v8 => (fun v8 : eqA v0 v1 => v3) v8 | right v8 => (fun v8 : ~ eqA v0 v1 => v4) v8 end = v3) with | left v7 => (fun v7 : eqA v0 v1 => eq_refl) v7 | right v7 => (fun v7 : ~ eqA v0 v1 => match v7 v5 as v8 in False return (v4 = v3) with end) v7 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.PermutSetoid.Permut.if_eqA_else	344	42.506392	3	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.PermutSetoid.Permut_permut.permut_eqA	344	42.616372	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedTypeEx.Nat_as_OT.lt_not_eq	344	47.950606	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedTypeEx.Positive_as_OT.lt_not_eq	344	49.756698	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedTypeEx.PairOrderedType.eq_refl	344	46.776065	2	1
+coq-tactician-stdlib.8.11.dev	Coq.micromega.RingMicromega.Micromega.rtimes_morph_Proper	344	50.912731	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.RingMicromega.Micromega.rle_morph_Proper	344	49.691965	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalPos.Unsigned.Nadd_simpl	344	48.155629	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalPos.Unsigned.nat_iter_0	344	45.048193	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : Type) (v1 : forall v2 : v0, v0) (v2 : v0) => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalPos.Unsigned.to_uint_nonzero	344	308.793951	5123	188
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalPos.Unsigned.to_uint_inj	344	48.825757	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalPos.Unsigned.of_inj	344	45.617991	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalPos.Signed.to_int_inj	344	48.089862	3	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qreduction.Qred_comp_Proper	344	43.277422	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qreduction.Qmult'_correct	344	38.542857	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qreduction.Qred_compare	344	39.939003	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndec.Ndiv2_eq	344	47.791420	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndec.Nleb_refl	344	44.653969	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndec.Nltb_trans	344	46.483562	3	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndist.Nplength_infty	344	104.986685	1247	43
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndist.ni_le_antisym	344	47.867701	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndist.ni_le_min_2	344	44.976649	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndist.ni_le_total	344	46.567141	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndist.le_ni_le	344	44.455554	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndist.Npdist_eq_1	344	44.054530	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndist.Npdist_comm	344	46.346362	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zdivide_opp_r	344	38.669179	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @Z => let v2 : forall (v3 v4 : @Z) (v5 : (v3 | v4)), (v3 | - v4) := fun v3 v4 : @Z => match Z.divide_opp_r v3 v4 as v5 in (_ /\ _) return (forall v6 : (v3 | v4), (v3 | - v4)) with | conj v5 v6 => (fun (v5 : forall v6 : (v3 | - v4), (v3 | v4)) (v6 : forall v7 : (v3 | v4), (v3 | - v4)) => v6) v5 v6 end in v2 v0 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zdivide_opp_l_rev	344	39.551674	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zdivide_Zabs_l	344	38.112272	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zmod_divide	344	39.631751	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zdivide_mod	344	39.248169	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Z_lt_neq	344	37.357369	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zdivide_Zdiv_eq_2	344	38.734732	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zis_gcd_1	344	38.751572	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zis_gcd_minus	344	40.047746	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zis_gcd_opp	344	38.887425	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.rel_prime_bezout	344	38.451344	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.rel_prime_sym	344	37.083539	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.rel_prime_1	344	39.506421	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.rel_prime_mod_rev	344	39.476788	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zgcd_spec	344	38.812904	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zdivide_Zgcd	344	38.433234	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Pbit_Ptestbit	344	46.365684	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Nshiftr_nat_equiv	344	43.873706	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Nshiftl_equiv_nat	344	44.795098	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Pxor_semantics	344	45.453530	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Nxor_semantics	344	45.121696	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Por_semantics	344	49.538425	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Nand_semantics	344	45.838217	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Ndiff_semantics	344	45.661708	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Ndiv2_double_plus_one	344
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Nxor_bit0	344	49.104898	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndigits.Nneg_bit0_1	344	44.791679	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ClassicalDescription.excluded_middle_informative	344	38.543628	2	1
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ncring_polynom.MakeRingPol.Psquare_ok	344	42.668143	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ncring_polynom.MakeRingPol.NORM_SUBST_REC.norm_subst_spec	344	43.496904	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalString.NilZero.usu_nil	344	41.101807	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.IndefiniteDescription.functional_choice	344	39.292348	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ClassicalEpsilon.excluded_middle_informative	344	38.949432	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ClassicalChoice.choice	344	38.720486	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Epsilon.constructive_definite_description	344	42.846700	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Strings.BinaryString.to_N_of_N	344	42.489330	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Zmod_0_r	344	39.485330	1	1	0	synth with cache (only 1: refine (fun v0 : @Z => match v0 as v1 in Z return (v1 mod 0 = 0) with | 0 => eq_refl : 0 mod 0 = 0 | Z.pos v1 | Z.neg v1 => (fun v1 : @positive => eq_refl : Z.pos v1 mod 0 = 0) v1 end)).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Zdiv_0_l	344	37.801453	1	1	0	synth with cache (only 1: refine (fun v0 : @Z => match v0 as v1 in Z return (0 / v1 = 0) with | 0 => eq_refl : 0 / 0 = 0 | Z.pos v1 => (fun v1 : @positive => eq_refl : 0 mod Z.pos v1 = 0) v1 | Z.neg v1 => (fun v1 : @positive => eq_refl : BinIntDef.Z.rem 0 (Z.pos v1) = 0) v1 end)).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Zmod_1_r	344	38.361347	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Z_div_ge0	344	38.538744	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Z_div_ge	344	38.686866	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Zdiv_le_compat_l	344	38.136387	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Z_mod_plus_full	344	40.304496	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Zmod_opp_opp	344	40.327192	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Zmult_mod_idemp_r	344	40.004900	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Zmod_even	344	40.168511	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Z_mod_same	344	37.993342	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Z_div_same	344
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpower.Powers_of_2.shift_pos_equiv	344	36.949165	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @positive => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpower.Powers_of_2.shift_equiv	344	38.723516	7	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpower.Powers_of_2.two_power_pos_equiv	344	39.564485	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpower.Powers_of_2.shift_pos_nat	344	38.014104	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpower.Powers_of_2.two_p_is_exp	344	42.629329	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ChoiceFacts.fun_choice_iff_rel_choice_and_functional_rel_reification	344	10.413943	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ChoiceFacts.iota_imp_constructive_definite_description	344	9.972245	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ChoiceFacts.epsilon_imp_small_drinker	344	9.579384	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ChoiceFacts.dep_non_dep_functional_choice	344	15.495388	2	1
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rsub_ext_Proper	344	37.868383	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv1	344	39.811196	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.pow_pos_add_r	344	41.512869	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.pow_pos_nz	344	39.196739	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Field_theory.Complete.AlmostField.gen_phiN_complete	344	43.059060	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalNat.Unsigned.to_lu_succ	344	37.831924	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalNat.Unsigned.to_little_uint_succ	344	39.772219	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalNat.Unsigned.to_uint_alt	344	40.089824	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalNat.Unsigned.of_to_lu	344	40.572466	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalNat.Unsigned.of_inj	344	39.367378	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalNat.Signed.to_int_pos_surj	344	39.103447	7	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalNat.Signed.of_int_norm	344	41.827019	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.SetoidDec.unit_eqdec_obligation_1	344	39.688519	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Zerob.zerob_true_elim	344	249.340118	4922	92
+coq-tactician-stdlib.8.11.dev	Coq.Strings.String.eqb_refl	344	44.471230	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Strings.String.eqb_compat	344	42.753996	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qle_alt	344	46.551368	27	6
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qcompare_antisym	344	38.640792	4	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qeq_sym	344	39.189158	4	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qeq_bool_iff	344	38.117456	4	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qle_bool_imp_le	344	40.357936	4	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Q_apart_0_1	344	136.715994	1247	43
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qmult_0_l	344	38.245588	2	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qle_refl	344	39.484128	4	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qlt_irrefl	344	39.444332	3	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Zle_Qle	344	39.705217	4	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qnot_lt_le	344	68.218906	162	15
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qinv_lt_0_compat	344	39.279156	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zcomplements.sqr_pos	344	37.929574	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.Ztac.mul_le	344	38.344470	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.lt_nge	344	36.651797	2	1
+coq-tactician-stdlib.8.11.dev	Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Rtimes_0_l	344	38.293609	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Rle_ngt	344	40.627067	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Rlt_lt_succ	344	38.360390	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.ArithRing.natSRth	344	38.319924	2	1
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.InitialRing.ZMORPHISM.same_genZ	344	39.164517	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ_ext	344	37.754486	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.InitialRing.Neqb_ok	344	37.072959	2	1
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.InitialRing.NMORPHISM.radd_ext4_Proper	344	36.181374	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.InitialRing.NMORPHISM.rmul_ext4_Proper	344	37.474489	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.InitialRing.GEN_DIV.rsub_ext_Proper	344	38.141829	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetAVL.MakeRaw.create_ok	344	38.919731	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetAVL.MakeRaw.inter_spec	344	38.125899	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetAVL.MakeRaw.partition_spec2	344	36.656168	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetAVL.MakeRaw.partition_ok1	344	37.127216	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetPositive.PositiveSet.subset_Leaf_s	344	28.985678	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetPositive.PositiveSet.lex_Opp	344	348.834081	27	3
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_cxe	344	348.990046	90497	418
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_xgg	344	348.925001	42750	285
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetPositive.PositiveSet.lt_spec.compare_x_Leaf	344	348.809414	125	10
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetPositive.PositiveSet.partition_spec2	344	31.845726	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Wf_Z.Z_of_nat_complete_inf	344	32.429301	3	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Wf_Z.Z_of_nat_prop	344	30.398842	1	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zle_imp_le_bool	344	33.242241	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zone_pos	344	29.713473	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zle_is_le_bool	344	28.345583	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zge_is_le_bool	344	31.545253	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zlt_is_le_bool	344	31.236342	5	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zeq_bool_if	344	33.896456	3	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.MakeRaw.lbal_match	344	35.012725	225	30
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.MakeRaw.lbalS_match	344	348.702825	117	18
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.MakeRaw.treeify_spec	344	24.721511	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.MakeRaw.treeify_ok	344	21.492664	5	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.MakeRaw.filter_ok	344	30.801025	182	17
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.MakeRaw.partition_ok2	344	23.055619	4	2	1.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : @tree) (v1 : forall v2 : @elt, @bool) (v2 : Ok v0) => eq_ind_r (fun v3 : @t * @t => Ok (snd v3)) (filter_ok v0 (fun v3 : @elt => negb (v1 v3)) v2) (partition_spec v0 v1))).
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.MakeRaw.union_ok	344	28.804488	4	2	0.2	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 v1 : @tree) (v2 : Ok v0) (v3 : Ok v1) => (let v4 : @comparison := compare_height v0 v0 v1 v1 in match v4 as v5 in comparison return (Ok match v5 as v6 in comparison return (@t) with | Eq => linear_union v0 v1 | Lt => fold (@add) v0 v1 | Gt => fold (@add) v1 v0 end) with | Eq => ok : Ok (linear_union v0 v1) | Lt => ok : Ok (fold (@add) v0 v1) | Gt => ok : Ok (fold (@add) v1 v0) end) : Ok (union v0 v1))).
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.MakeRaw.linear_inter_ok	344	22.533145	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.BalanceProps.arb_nrr_rb	344	348.014634	50	5
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.BalanceProps.maxdepth_lowerbound	344	21.583761	27	5	0.8	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : @tree => maxdepth_log_cardinal v0)).
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.BalanceProps.singleton_rb	344	87.003075	2318	122
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.BalanceProps.partition_rb1	344	24.376277	6	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.BalanceProps.union_rb	344	348.078674	9146	134
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetRBT.BalanceProps.inter_rb	344	348.050949	2593	72
+coq-tactician-stdlib.8.11.dev	Coq.micromega.EnvRing.MakeRingPol.radd_ext_Proper	344	34.388077	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.EnvRing.MakeRingPol.rsub_ext_Proper	344	32.937606	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.EnvRing.MakeRingPol.Pphi1	344	33.174607	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.EnvRing.MakeRingPol.pow_pos_add	344	33.459108	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.EnvRing.MakeRingPol.ceqb_spec	344	35.901076	3	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.EnvRing.MakeRingPol.Mjump_xO_tail	344	33.241867	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.EnvRing.MakeRingPol.NORM_SUBST_REC.norm_aux_PEopp	344	30.979135	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zmisc.iter_nat_of_Z	344	31.739355	5	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.auxiliary.Zle_left_rev	344	32.290652	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zmax.Zpos_max_1	344	27.663802	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zmin.Zpos_min_1	344	31.658903	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ring_polynom.MakeRingPol.radd_ext_Proper	344	32.996561	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ring_polynom.MakeRingPol.rsub_ext_Proper	344	32.718000	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ring_polynom.MakeRingPol.Pphi_ext	344	51.638757	38	8
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ring_polynom.MakeRingPol.mkZmon_ok	344	33.623517	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Integers.Integers_sect.le_reflexive	344	17.911295	1	1	0	synth with cache (only 1: refine ((fun v0 : @nat => le_n v0) : RelationClasses.Reflexive (@le))).
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Integers.Integers_sect.Integers_infinite	344	17.705851	1	1	0	synth with cache (only 1: refine ((fun v0 : ~ (exists v1 : @nat, Upper_Bound (@nat) (@nat_po) (@Integers) v1) => (fun v1 : Finite (@nat) (@Integers) => v0 (Finite_subset_has_lub (@Integers) v1)) : ~ Finite (@nat) (@Integers)) (@Integers_has_no_ub))).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.dec_Zne	344
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zle_not_gt	344	28.816985	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Znot_lt_ge	344	30.645371	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 v1 : @Z) (v2 : ~ v0 < v1) => v2)).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zle_succ_le	344	27.788741	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zlt_succ_pred	344	32.560953	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zlt_0_le_0_pred	344	28.147435	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zplus_lt_reg_l	344	31.488154	7	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zplus_lt_reg_r	344	31.609850	6	2	0.4	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 v2 : @Z => let v3 : forall (v4 v5 v6 : @Z) (v7 : v4 + v6 < v5 + v6), v4 < v5 := fun v4 v5 v6 : @Z => match Z.add_lt_mono_r v4 v5 v6 as v7 in (_ /\ _) return (forall v8 : v4 + v6 < v5 + v6, v4 < v5) with | conj v7 v8 => (fun (v7 : forall v8 : v4 < v5, v4 + v6 < v5 + v6) (v8 : forall v9 : v4 + v6 < v5 + v6, v4 < v5) => v8) v7 v8 end in v3 v0 v1 v2)).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_le_compat_r	344	30.097068	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_lt_0_le_compat_r	344	31.193447	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_lt_compat	344	29.612802	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_lt_0_reg_r	344	32.244452	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zle_0_minus_le	344	28.128049	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zle_minus_le_0	344	30.135415	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms_Relations.relation_equivalence_pointwise	344	21.677457	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Classes.SetoidClass.setoid_refl	344	21.087444	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.SetoidClass.equiv_nequiv_trans	344	19.733533	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Int.MoreInt.ltb_lt	344	31.187268	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Int.MoreInt.leb_le	344	30.825441	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Int.Z_as_Int.i2z_1	344	26.138261	1	1	0	synth with cache (only 1: refine eq_refl).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeuclid.ZEuclid.mod_wd	344	32.363389	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Strings.Byte.eqb_false	344	112.637837	1403	92
+coq-tactician-stdlib.8.11.dev	Coq.Strings.Byte.nat.to_of_nat_iff	344	27.342225	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpow_alt.Zpower_alt_0_r	344	27.648286	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : @Z => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.micromega.Env.S.jump_add	344	32.145153	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.Env.S.nth_jump	344	29.672361	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.positive_nat_Z	344	31.886113	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.N2Z.inj_compare	344	136.920346	2250	120
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.N2Z.inj_abs_N	344	27.562933	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.N2Z.inj_mul	344	32.849252	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.N2Z.inj_pred_max	344	28.444665	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.N2Z.inj_quot2	344	30.633251	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Zabs2N.abs_N_spec	344	30.074109	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Zabs2N.inj_opp	344	30.170045	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Zabs2N.inj_add	344	29.523373	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Zabs2N.inj_lt	344	349.038819	2530	129
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Zabs2N.inj_min	344	31.973907	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Zabs2N.inj_max	344	29.930223	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Zabs2N.inj_succ_abs	344	33.034008	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Nat2Z.inj_0	344	26.734080	1	1	0	synth with cache (only 1: refine eq_refl).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Nat2Z.inj_succ	344	29.869132	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Nat2Z.id	344	32.585858	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Nat2Z.inj_iff	344	29.282278	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Nat2Z.inj_le	344	348.990823	78	15
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Nat2Z.inj_lt	344
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Nat2Z.inj_pred_max	344	31.271523	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Z2Nat.inj_compare	344	41.616898	27	6
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Zabs2Nat.inj_lt	344
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.inj_minus2	344	29.609260	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zodd_bool_iff	344	32.126337	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zodd_2p_plus_1	344	349.113403	164	25
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zcompare.Zcompare_plus_compat	344	28.706709	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zcompare.Zcompare_Gt_not_Lt	344	33.609988	3	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zcompare.Zcompare_succ_compat	344	27.434556	5	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetList.MakeRaw.ForNotations.singleton_ok	344	22.368758	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetList.MakeRaw.ForNotations.empty_ok	344	17.152022	1	1	0	synth with cache (only 1: refine Logic.eq_refl).
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetGenTree.Props.gt_tree_not_in	344	17.574039	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetWeakList.MakeRaw.ForNotations.fold_spec	344	19.146504	1	1	0	synth with cache (only 1: refine (fun (v0 : @t) (v1 : Type) (v2 : v1) (v3 : forall (v4 : @elt) (v5 : v1), v1) => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Raw.Elt.elements_2	344	23.473610	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Raw.Elt.elements_3	344	24.113563	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Raw.Elt.elements_3w	344	24.370117	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Make.Elt.empty_1	344	27.623578	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Make.Elt.is_empty_2	344	30.022764	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Make.Elt.add_1	344	27.986985	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Make.Elt.add_3	344	25.693413	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Make.Elt.remove_2	344	30.692337	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Make.Elt.elements_3	344	27.894920	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Make.Elt.fold_1	344	28.116212	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapList.Make.mapi_2	344	27.589973	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : Type) (v2 : t v0) => Raw.mapi_2 (elt:=v0) (elt':=v1) (m:=v2))).
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Image.Image.In_Image_elim	344	20.150595	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Image.Image.Pigeonhole_principle	344	17.922397	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.one_succ	344	20.509056	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.add_succ_l	344	24.902601	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.sub_0_r	344	23.350798	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.double_spec	344	24.242756	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.rem_opp_r	344	22.861895	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.div2_spec	344	24.472163	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.lt_gt	344	30.642569	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.ge_le	344	26.421978	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.geb_leb	344	348.429377	79	15
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.gtb_spec	344	28.517825	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.mul_reg_r	344	28.798792	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.opp_eq_mul_m1	344	26.567842	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.add_diag	344	28.568147	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.inj_succ	344	28.211078	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.inj_pred	344	28.724869	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.inj_divide	344	28.425547	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @positive => Z.divide_Zpos v0 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.neg_is_neg	344	29.551423	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.pos_is_nonneg	344	57.235361	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : @positive => (fun v1 : (0 ?= Zpos v0) = @Gt => let v2 : forall v3 : @Gt = @Gt, @False := match v1 as v4 in (_ = v3) return (forall v5 : v3 = @Gt, @False) with | eq_refl => fun v3 : (0 ?= Zpos v0) = @Gt => (fun v4 : (0 ?= Zpos v0) = @Gt => let v5 : @False := eq_ind (0 ?= Zpos v0) (fun v6 : @comparison => match v6 as v7 in comparison return Prop with | Lt => @normalization_done | _ => @False end) (@did_normalization) (@Gt) v4 in False_ind (@False) v5) v3 end in v2 eq_refl) : 0 <= Zpos v0)).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.neg_le_pos	344
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.neg_le_neg	344	99.813921	2250	120
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.pos_xI	344	27.719160	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.opp_neg	344	27.280521	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : @positive => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.opp_pos	344	25.702258	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.add_pos_neg	344	27.869998	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.divide_pos_neg_l	344	28.666337	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Pos2Z.testbit_pos	344	28.502376	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z2Pos.inj_sqrt	344	28.165862	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Zplus_diag_eq_mult_2	344	26.128482	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z_eq_mult	344	28.542230	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapWeakList.Raw.Elt.add_eq	344	23.362401	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapWeakList.Raw.Elt.elements_2	344	23.397446	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapWeakList.Make.Elt.empty_1	344	24.380586	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapWeakList.Make.Elt.remove_2	344	22.471201	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapWeakList.Make.Elt.remove_3	344	24.231185	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapWeakList.Make.Elt.elements_3w	344	26.117394	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapWeakList.Make.Elt.cardinal_1	344	22.692888	4	2
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapWeakList.Make.map_2	344	24.324204	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : Type) (v2 : t v0) => Raw.map_2 (elt:=v0) (elt':=v1) (m:=v2))).
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FMapWeakList.Make.map2_2	344	24.808396	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Lists.SetoidPermutation.Permutation.Permutation_PermutationA	344	22.351332	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.Mergesort.Sort.Permuted_sort	344	18.587518	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Finite_sets_facts.Finite_sets_facts.Add_preserves_Finite	344	19.313867	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Finite_sets_facts.Finite_sets_facts.cardinal_unicity	344	19.752215	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Finite_sets_facts.Finite_sets_facts.G_aux	344	19.539694	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.ltb_base	344	20.787978	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.log_wd	344	20.357019	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetBridge.DepOfNodep.empty	344	17.387504	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetBridge.DepOfNodep.singleton	344	19.898988	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetBridge.DepOfNodep.cardinal	344	18.098045	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetBridge.DepOfNodep.choose_aux	344	20.772519	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetBridge.NodepOfDep.is_empty_2	344	77.561695	1247	43
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetBridge.NodepOfDep.equal_1	344	20.254233	2	1
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetBridge.NodepOfDep.singleton_1	344	19.124026	2	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.subset_spec	344	19.994206	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.is_empty_spec	344	20.070792	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.partition_spec1	344	18.151936	4	2
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetInterface.Raw2SetsOn.Spec.max_elt_spec1	344	19.247904	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersLists.OrderedTypeLists.Inf_lt	344	17.257213	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersLists.OrderedTypeLists.ListIn_Inf	344	19.196165	1	1	0	synth with cache (only 1: refine (In_InfA (ltA:=@O.lt))).
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersLists.OrderedTypeLists.Inf_alt	344	17.188660	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersLists.KeyOrderedType.pair_compat	344	20.235406	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_Classical_facts.Sets_as_an_algebra.incl_soustr_add_r	344	19.156237	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_Classical_facts.Sets_as_an_algebra.add_soustr_2	344	20.021999	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_Classical_facts.Sets_as_an_algebra.add_soustr_1	344	22.109749	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_Classical_facts.Sets_as_an_algebra.Sub_Add_new	344
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersAlt.OT_from_Alt.lt_strorder	344	348.212803	8	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.EqualitiesFacts.KeyDecidableType.eqke_1	344	21.206200	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.Permutation.Permutation_cons	344	21.727135	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.Permutation.Permutation_properties.Permutation_add_inside	344	19.470054	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.Permutation.Permutation_properties.Permutation_app_inv	344	21.503597	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sorting.Permutation.Permutation_properties.Permutation_length_1	344	20.149928	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedTypeAlt.OrderedType_from_Alt.eq_refl	344	348.163724	77	7
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ClassicalUniqueChoice.unique_choice	344	17.860562	1	1	0	synth with cache (only 1: refine (fun v0 v1 : Type => dependent_unique_choice v0 (fun v2 : v0 => v1))).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ClassicalUniqueChoice.not_not_classic_set	344	16.422881	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Classes.RelationPairs.RelCompFun_Instances.RelCompFun_Irreflexive	344	18.085429	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.RelationPairs.RelProd_Instances.RelProd_Reflexive	344	21.178679	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Classical_sets.Ensembles_classical.not_included_empty_Inhabited	344	19.129811	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Classical_sets.Ensembles_classical.not_empty_Inhabited	344	19.351154	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Classical_sets.Ensembles_classical.Subtract_intro	344	18.451565	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.DecidableType.KeyDecidableType.Elt.eqk_refl	344	18.367659	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.OrderedTypeFacts.lt_antirefl	344	17.314762	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.OrderedTypeFacts.lt_eq	344	19.757932	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.OrderedTypeFacts.IsTO.le_lteq	344	17.795639	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.OrderedTypeFacts.le_trans	344	19.856484	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.OrderedTypeFacts.neq_sym	344	17.704019	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 v1 : @t) (v2 : ~ eq v0 v1) => (fun v3 : eq v1 v0 => v2 (eq_sym v3)) : ~ eq v1 v0)).
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.OrderedTypeFacts.eq_not_gt	344	17.310335	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.OrderedTypeFacts.ForNotations.Inf_lt	344	18.768002	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.OrderedTypeFacts.ForNotations.Sort_Inf_In	344	18.683215	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.OrderedTypeFacts.ForNotations.ListIn_Inf	344	17.270732	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.KeyOrderedType.Elt.ltk_right_l	344	19.029099	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.KeyOrderedType.Elt.eqke_refl	344	17.697917	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.KeyOrderedType.Elt.eqk_sym	344	19.528817	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.KeyOrderedType.Elt.Inf_lt	344	17.090752	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.KeyOrderedType.Elt.Sort_Inf_In	344	19.112677	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedType.KeyOrderedType.Elt.Sort_Inf_NotIn	344	18.867811	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Vectors.VectorSpec.const_nth	344	40.527306	1350	48
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ring_theory.Power.pow_N_pow_N	344	23.562794	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ring_theory.ALMOST_RING.ropp_ext2_Proper	344	23.371352	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ring_theory.ALMOST_RING.RING.cadd_ext_Proper	344	24.776527	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ring_theory.ALMOST_RING.RING.copp_ext_Proper	344	25.069587	4	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ring_theory.ALMOST_RING.ARmul_1_r	344	26.488496	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndiv_def.Pdiv_eucl_remainder	344	212.655805	5123	188
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Nnat.N2Nat.inj_double	344	21.398422	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Nnat.N2Nat.inj_succ_double	344	23.740964	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Nnat.N2Nat.inj_succ	344	23.855995	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Nnat.Nat2N.id	344	21.399591	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Nnat.Nat2N.inj_iff	344	24.377106	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Nnat.Nat2N.inj_double	344	22.989980	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Nnat.Nat2N.inj_max	344	25.153147	4	2
+coq-tactician-stdlib.8.11.dev	Coq.micromega.Tauto.map_simpl	344	18.032850	2	1
+coq-tactician-stdlib.8.11.dev	Coq.micromega.Tauto.S.CNFAnnot.Abstraction.if_cnf_tt	344	17.615960	1	1	0	synth with cache (only 1: refine (fun v0 : @cnf => let v1 : @bool := is_cnf_tt v0 in let v2 : is_cnf_tt v0 = v1 := eq_refl in match v1 as v3 in bool return (forall v4 : is_cnf_tt v0 = v3, match v3 as v5 in bool return (@cnf) with | true => @cnf_tt | false => v0 end = v0) with | true => fun v3 : is_cnf_tt v0 = @true => let v4 : v0 = @cnf_tt := is_cnf_tt_inv v0 v3 in eq_sym v4 | false => fun v3 : is_cnf_tt v0 = @false => eq_refl end v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Lists.SetoidList.Type_with_equality.Fold.fold_right_add	344	19.037310	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Lists.SetoidList.Type_with_equality.Fold2.fold_right_add2	344	18.974338	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Lists.SetoidList.Type_with_equality.InfA_alt	344	20.207256	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Lists.SetoidList.Type_with_equality.EqlistA.eqlistA_length	344	19.853060	4	2
+coq-tactician-stdlib.8.11.dev	Coq.rtauto.Rtauto.with_env.compose1	344	21.854959	2	1
+coq-tactician-stdlib.8.11.dev	Coq.rtauto.Rtauto.with_env.project	344	19.345968	2	1
+coq-tactician-stdlib.8.11.dev	Coq.rtauto.Rtauto.with_env.Reflect	344	348.336324	1350	45
+coq-tactician-stdlib.8.11.dev	Coq.Lists.ListSet.first_definitions.set_add_iff	344	19.418367	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.peano_rect_base	344	17.234367	5	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.one_succ	344	18.737574	2	1
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.pos_pred_succ	344	16.886233	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.compare_le_iff	344	20.125815	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.compare_antisym	344	347.846064	502	51
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.max_r	344	347.858335	110	19
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.double_spec	344	19.841266	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.succ_double_add	344	20.225089	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.div2_double	344	20.304256	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.div2_succ_double	344	18.833692	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.double_inj	344	20.537106	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.succ_double_inj	344	19.097838	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.succ_double_le_mono	344	21.890676	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.size_gt	344	19.676086	3	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.sqrt_spec	344
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.sqrt_neg	344	348.043350	79	15
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.shiftr_succ_r	344	21.413615	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.div2_spec	344	18.568403	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : @N => Logic.eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.gt_lt	344	22.968053	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.lt_gt	344	22.947590	4	2
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.ge_le	344	21.333763	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Classical_Pred_Type.Generic.not_ex_not_all	344	17.445042	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : Type) (v1 : forall v2 : v0, Prop) (v2 : ~ (exists v3 : v0, ~ v1 v3)) (v3 : v0) => NNPP (v1 v3) ((fun v4 : ~ v1 v3 => v2 (ex_intro (fun v5 : v0 => notT (v1 v5)) v3 v4)) : ~ ~ v1 v3))).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Classical_Pred_Type.Generic.all_not_not_ex	344	19.006912	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.PropExtensionality.proof_irrelevance	344	15.730134	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Classical_Prop.NNPP	344	17.756163	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Classical_Prop.Peirce	344	16.652643	1	1	0	synth with cache (only 1: refine (fun (v0 : Prop) (v1 : forall v2 : forall v3 : v0, @False, v0) => let v2 : v0 \/ ~ v0 := classic v0 in match v2 as v3 in (_ \/ _) return v0 with | or_introl v3 => (fun v3 : v0 => v3) v3 | or_intror v3 => (fun v3 : ~ v0 => v1 v3) v3 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Classical_Prop.or_to_imply	344	15.924060	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : Prop) (v2 : ~ v0 \/ v1) (v3 : v0) => or_ind (fun v4 : ~ v0 => let v5 : @False := v4 v3 in False_ind v1 v5) (fun v4 : v1 => v4) v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Classical_Prop.or_not_and	344	18.351591	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : Prop) (v2 : ~ v0 \/ ~ v1) => or_ind ((fun (v3 : ~ v0) (v4 : v0 /\ v1) => and_ind (fun (v5 : v0) (v6 : v1) => v3 v5) v4) : forall v3 : ~ v0, ~ (v0 /\ v1)) ((fun (v3 : ~ v1) (v4 : v0 /\ v1) => and_ind (fun v5 : v0 => v3) v4) : forall v3 : ~ v1, ~ (v0 /\ v1)) v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Classical_Prop.not_or_and	344	16.413205	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Classical_Prop.Eq_rect_eq.eq_rect_eq	344	17.406290	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Facts.hd_error_nil	344	15.406584	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : Type => eq_refl : hd_error [] = None)).
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Facts.in_cons	344	15.637579	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : Type => (fun (v1 v2 : v0) (v3 : list v0) (v4 : In v2 v3) => or_intror v4) : forall (v1 v2 : v0) (v3 : list v0) (v4 : In v2 v3), In v2 (v1 :: v3))).
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Facts.in_nil	344	14.679613	1	1	0	synth with cache (only 1: refine ((fun (v0 : @A) (v1 : In v0 []) => let v2 : @False := match v1 as v3 in False return (@False) with end in v2) : forall v0 : @A, ~ In v0 [])).
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Facts.app_nil_l	344	16.312795	1	1	0	synth with cache (only 1: refine (fun v0 : list (@A) => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Facts.app_assoc_reverse	344	15.092698	1	1	0	synth with cache (only 1: refine (fun v0 v1 v2 : list (@A) => eq_sym (app_assoc v0 v1 v2))).
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Facts.in_app_iff	344	16.560725	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Filtering.filter_ext_in	344	19.183421	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Filtering.ext_in_filter	344	17.649093	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.length_order.lel_cons	344	18.733269	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.length_order.lel_tail	344	17.356551	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.SetIncl.incl_tran	344	15.438592	1	1	0	synth with cache (only 1: refine (fun (v0 v1 v2 : list (@A)) (v3 : incl v0 v1) (v4 : incl v1 v2) => (fun (v5 : @A) (v6 : In v5 v0) => v4 v5 (v3 v5 v6)) : incl v0 v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.SetIncl.incl_appl	344	17.097510	1	1	0	synth with cache (only 1: refine (fun (v0 v1 v2 : list (@A)) (v3 : incl v0 v2) => (fun (v4 : @A) (v5 : In v4 v0) => in_or_app v2 v1 v4 (or_introl (v3 v4 v5))) : incl v0 (v2 ++ v1))).
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Cutting.firstn_le_length	344
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Cutting.skipn_cons	344	15.569626	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Lists.List.Cutting.skipn_all	344	15.804172	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ClassicalFacts.Proof_irrelevance_gen.ext_prop_dep_proof_irrel_gen	344	11.864535	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ClassicalFacts.Proof_irrelevance_Prop_Ext_CC.ext_prop_dep_proof_irrel_cc	344	7.519813	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ClassicalFacts.Proof_irrelevance_WEM_CC.wproof_irrelevance_cc	344	12.658446	4	2
+coq-tactician-stdlib.8.11.dev	Coq.funind.Recdef.Splus_lt	344	17.037053	4	2
+coq-tactician-stdlib.8.11.dev	Coq.funind.Recdef.SSplus_lt	344	14.952920	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.Pnat.Pos2Nat.inj_xI	344	19.088451	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.Pnat.Pos2Nat.is_pos	344	19.321426	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.Pnat.Nat2Pos.inj_iff	344
+coq-tactician-stdlib.8.11.dev	Coq.PArith.Pnat.SuccNat2Pos.inj_succ	344	17.985570	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_plus_carry_morphism	344	19.815207	2	1
+coq-tactician-stdlib.8.11.dev	Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_r_plus_morphism	344	17.602518	2	1
+coq-tactician-stdlib.8.11.dev	Coq.PArith.Pnat.ObsoletePmultNat.ZL6	344	19.888163	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Wf_nat.lt_wf_double_ind	344	16.253679	2	1
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.xI_succ_xO	344	15.335918	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.pred_N_succ	344	18.788996	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.add_1_l	344	15.773038	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : @positive => match v0 as v1 in positive return (1 + v1 = BinPosDef.Pos.succ v1) with | v1~1 => (fun v1 : @positive => Logic.eq_refl) v1 | v1~0 => (fun v1 : @positive => Logic.eq_refl) v1 | 1 => Logic.eq_refl end)).
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.add_carry_add	344	18.045005	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.add_carry_reg_r	344	16.244703	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 v1 v2 : @positive) (v3 : BinPosDef.Pos.add_carry v0 v2 = BinPosDef.Pos.add_carry v1 v2) => add_reg_r v0 v1 v2 (add_carry_add v0 v1 v2 v2 v3))).
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.peano_case	344	15.802708	2	1
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.mul_comm	344	17.245408	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.mul_reg_l	344	18.204305	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.ge_le	344	347.585105	143	11
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.lt_succ_diag_r	344	347.577121	108	9
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.lt_le_incl	344	18.999444	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.le_refl	344	347.616631	110	19
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.lt_add_diag_r	344	16.643398	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.add_le_mono_l	344	348.204074	11297	286
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.mul_lt_mono_r	344	348.102359	13667	307
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.mul_le_mono_l	344	347.563248	9291	259
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.lt_not_add_l	344	16.560514	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.add_sub	344	16.686985	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.mul_sub_distr_r	344	19.068722	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.sub_decr	344	17.851806	4	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.sub_mask_neg_iff'	344	18.870554	3	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.add_max_distr_l	344	18.410228	3	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.add_min_distr_l	344	18.186064	3	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.pred_of_succ_nat	344	18.776943	3	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Peqb_true_eq	344	19.156651	6	2	0.4	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @BinNums.positive => let v2 : forall (v3 v4 : @BinNums.positive) (v5 : (v3 =? v4) = @true), v3 = v4 := fun v3 v4 : @BinNums.positive => match Pos.eqb_eq v3 v4 as v5 in (_ /\ _) return (forall v6 : (v3 =? v4) = @true, v3 = v4) with | conj v5 v6 => (fun (v5 : forall v6 : (v3 =? v4) = @true, v3 = v4) (v6 : forall v7 : v3 = v4, (v3 =? v4) = @true) => v5) v5 v6 end in v2 v0 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Dcompare	344	347.467574	27	3
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Compare_dec.dec_lt	344	16.379724	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Compare_dec.nat_compare_ge	344	17.385196	8	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Compare_dec.nat_compare_eq	344	16.650072	6	2	0.4	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @nat => let v2 : forall (v3 v4 : @nat) (v5 : (v3 ?= v4) = @Eq), v3 = v4 := fun v3 v4 : @nat => match Nat.compare_eq_iff v3 v4 as v5 in (_ /\ _) return (forall v6 : (v3 ?= v4) = @Eq, v3 = v4) with | conj v5 v6 => (fun (v5 : forall v6 : (v3 ?= v4) = @Eq, v3 = v4) (v6 : forall v7 : v3 = v4, (v3 ?= v4) = @Eq) => v5) v5 v6 end in v2 v0 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Compare_dec.nat_compare_Gt_gt	344	347.776875	6995	223
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Compare_dec.leb_iff_conv	344
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Factorial.lt_O_fact	344	15.424898	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Gt.gt_n_S	344	15.701445	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Gt.gt_not_le	344	17.061906	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Gt.gt_S_le	344	15.576876	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Gt.plus_gt_compat_l	344	17.296665	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 v2 : @nat => let v3 : forall (v4 v5 v6 : @nat) (v7 : v4 < v5), v6 + v4 < v6 + v5 := fun v4 v5 v6 : @nat => match Nat.add_lt_mono_l v4 v5 v6 as v7 in (_ /\ _) return (forall v8 : v4 < v5, v6 + v4 < v6 + v5) with | conj v7 v8 => (fun (v7 : forall v8 : v4 < v5, v6 + v4 < v6 + v5) (v8 : forall v9 : v6 + v4 < v6 + v5, v4 < v5) => v7) v7 v8 end in v3 v1 v0 v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Mult.mult_assoc_reverse	344	15.258515	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Mult.odd_even_lem	344	18.183514	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZDomain.NZDomainProp.InitialExists.SuccPred.succ_pred_approx	344	19.452702	5	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZDomain.NZOfNatOrd.ofnat_eq	344	15.655932	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Multiset.multiset_defs.munion_empty_left	344	15.654511	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Multiset.multiset_defs.munion_perm_left	344	17.508696	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Multiset.multiset_defs.treesort_twist1	344	16.354825	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Plus.plus_lt_reg_l	344	16.044485	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 v2 : @nat => let v3 : forall (v4 v5 v6 : @nat) (v7 : v6 + v4 < v6 + v5), v4 < v5 := fun v4 v5 v6 : @nat => match Nat.add_lt_mono_l v4 v5 v6 as v7 in (_ /\ _) return (forall v8 : v6 + v4 < v6 + v5, v4 < v5) with | conj v7 v8 => (fun (v7 : forall v8 : v4 < v5, v6 + v4 < v6 + v5) (v8 : forall v9 : v6 + v4 < v6 + v5, v4 < v5) => v8) v7 v8 end in v3 v0 v1 v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Plus.plus_le_compat_l	344	15.839627	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Plus.plus_le_compat_r	344	17.204938	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Plus.plus_lt_compat_l	344	16.102847	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 v2 : @nat => let v3 : forall (v4 v5 v6 : @nat) (v7 : v4 < v5), v6 + v4 < v6 + v5 := fun v4 v5 v6 : @nat => match Nat.add_lt_mono_l v4 v5 v6 as v7 in (_ /\ _) return (forall v8 : v4 < v5, v6 + v4 < v6 + v5) with | conj v7 v8 => (fun (v7 : forall v8 : v4 < v5, v6 + v4 < v6 + v5) (v8 : forall v9 : v6 + v4 < v6 + v5, v4 < v5) => v7) v7 v8 end in v3 v0 v1 v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Plus.plus_lt_compat_r	344	16.126546	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Plus.lt_plus_trans	344	14.886866	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Minus.minus_plus_simpl_l_reverse	344	15.667606	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Minus.lt_O_minus_lt	344	17.691788	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Peano.NPeano.Odd_equiv	344	14.954003	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Between.Between.exists_le_S	344	15.979296	7	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Between.Between.in_int_lt	344	15.404476	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Between.Between.in_int_S	344	16.770888	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Between.Between.in_int_exists	344	16.335762	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Div2.div2_odd	344
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Div2.even_odd_div2	344	20.508567	3	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Div2.div2_double_plus_one	344	14.816763	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : @nat => Nat.div2_succ_double v0)).
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Lt.neq_0_lt	344	15.583964	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Lt.lt_S_n	344	15.506604	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Lt.le_lt_or_eq	344	17.101036	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Lt.nat_total_order	344	16.178339	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @nat => let v2 : forall (v3 v4 : @nat) (v5 : v3 <> v4), v3 < v4 \/ v4 < v3 := fun v3 v4 : @nat => match Nat.lt_gt_cases v3 v4 as v5 in (_ /\ _) return (forall v6 : v3 <> v4, v3 < v4 \/ v4 < v3) with | conj v5 v6 => (fun (v5 : forall v6 : v3 <> v4, v3 < v4 \/ v4 < v3) (v6 : forall v7 : v3 < v4 \/ v4 < v3, v3 <> v4) => v5) v5 v6 end in v2 v0 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Arith.EqNat.eq_nat_eq	344	15.553769	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @nat => let v2 : forall (v3 v4 : @nat) (v5 : eq_nat v3 v4), v3 = v4 := fun v3 v4 : @nat => match eq_nat_is_eq v3 v4 as v5 in (_ /\ _) return (forall v6 : eq_nat v3 v4, v3 = v4) with | conj v5 v6 => (fun (v5 : forall v6 : eq_nat v3 v4, v3 = v4) (v6 : forall v7 : v3 = v4, eq_nat v3 v4) => v5) v5 v6 end in v2 v0 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Arith.EqNat.eq_nat_elim	344	14.773660	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.double_bits	344	14.780437	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.eqf_equiv	344	14.146554	1	1	0	synth with cache (only 1: refine {| Equivalence_Reflexive := (fun v0 : forall v1 : @t, @bool => (fun v1 : @t => Logic.eq_refl) : eqf v0 v0) : Reflexive (@eqf); Equivalence_Symmetric := (fun (v0 : forall v1 : @t, @bool) (v1 : forall v2 : @t, @bool) (v2 : eqf v0 v1) => (fun v3 : @t => Logic.eq_sym (v2 v3)) : eqf v1 v0) : Symmetric (@eqf); Equivalence_Transitive := (fun (v0 : forall v1 : @t, @bool) (v1 : forall v2 : @t, @bool) (v2 : forall v3 : @t, @bool) (v3 : eqf v0 v1) (v4 : eqf v1 v2) => (fun v5 : @t => Logic.eq_trans (v3 v5) (v4 v5)) : eqf v0 v2) : Transitive (@eqf) |}).
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.bits_inj'	344	14.484466	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftr_div_pow2	344	14.077874	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftr_0_l	344	13.007841	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lxor_eq_0_iff	344	15.938929	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lor_0_r	344	14.770831	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.land_0_l	344	13.338625	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.land_diag	344	12.887738	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.land_m1_r	344	14.504555	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.land_m1_l	344	14.150232	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.log2_shiftl	344	14.514093	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.compare_succ	344	12.187117	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.square_spec	344	12.706440	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : @nat => Logic.eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.sqrt_specif	344	16.006259	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.gcd_divide_r	344	13.758166	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.div2_decr	344	15.206254	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.double_twice	344	13.490728	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.testbit_even_0	344	14.619678	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.ldiff_spec	344	13.415354	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.tail_mul_spec	344	16.306961	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @nat => eq_ind_r (fun v2 : @nat => v2 = v0 * v1) Logic.eq_refl (tail_addmul_spec 0 v0 v1) : Init.Nat.tail_mul v0 v1 = v0 * v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.rem_mod_eq_0	344	14.380980	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_unique	344	13.454144	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_0_r	344	15.675712	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_diag_nonneg	344	13.579281	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.divide_lcm_eq_r	344	14.502037	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_1_l	344	14.314947	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bits_inj_iff	344	14.034001	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.shiftr_spec'	344	12.857811	1	1	0	synth with cache (only 1: refine (fun v0 v1 v2 : @t => shiftr_spec v0 v1 v2 (le_0_l v2))).
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.shiftr_div_pow2	344	14.091819	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.lxor_comm	344	13.958615	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.lor_comm	344	13.855072	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.land_0_l	344	13.294107	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.ldiff_diag	344	13.281519	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.setbit_spec'	344	14.393324	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.ones_equiv	344	13.996325	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.lnot_spec_high	344	14.472099	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.lor_lnot_diag_low	344	14.623814	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.land_lnot_diag_low	344	14.114112	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBits.NBitsProp.add_bit0	344	14.289900	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZDivFloor.ZDivProp.div_unique_pos	344	14.089494	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZDivFloor.ZDivProp.mod_unique_pos	344	13.261458	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZDivFloor.ZDivProp.div_lt_upper_bound	344	13.661929	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZDivFloor.ZDivProp.mod_div	344	13.952625	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZDivEucl.ZEuclidProp.mod_div	344	14.058078	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_1_r	344	13.210027	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_0_l	344	13.898807	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZSgnAbs.ZSgnAbsProp.abs_0	344	14.271073	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZSgnAbs.ZSgnAbsProp.abs_spec	344	14.252427	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZSgnAbs.ZSgnAbsProp.abs_case	344	13.065862	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZSgnAbs.ZSgnAbsProp.abs_square	344	13.180499	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZSgnAbs.ZSgnAbsProp.sgn_0	344	13.872631	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_0_l	344	12.571751	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_1_l	344	12.962604	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_1_r	344	13.731177	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NPow.NPowProp.pow_0_l	344	13.097076	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NPow.NPowProp.pow_mul_r	344	12.735896	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NPow.NPowProp.pow_lt_mono_l	344	13.032585	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NPow.NPowProp.pow_le_mono_l_iff	344	13.283947	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NPow.NPowProp.pow_le_mono_r_iff	344	12.073037	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NPow.NPowProp.pow_add_lower	344	13.067299	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NGcd.NGcdProp.gcd_sub_diag_r	344	14.337518	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mod_upper_bound	344	14.026666	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.div_unique	344	12.577798	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mod_unique	344	12.965224	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.div_unique_exact	344	13.145365	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mod_0_l	344	13.168059	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mod_1_r	344	12.531002	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mod_1_l	344	12.575918	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.div_mul	344	12.568022	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mod_mul	344	13.602403	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.div_le_mono	344	13.251444	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mul_div_le	344	13.282781	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.div_le_lower_bound	344	12.938182	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.div_add	344	13.135903	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.div_mul_cancel_r	344	13.963435	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mul_mod_distr_r	344	13.929101	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mod_mod	344	12.700966	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mul_mod_idemp_r	344	13.430417	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mul_mod	344	12.971280	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mod_mul_r	344	13.809377	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NMaxMin.NMaxMinProp.max_0_l	344	12.862896	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NMaxMin.NMaxMinProp.max_0_r	344	13.777938	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NMaxMin.NMaxMinProp.min_0_l	344	12.484624	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NSqrt.NSqrtProp.sqrt_spec'	344	11.851548	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NSqrt.NSqrtProp.sqrt_mul_above	344	12.627026	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZMulOrder.ZMulOrderProp.nlt_square_0	344	13.186966	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZMulOrder.ZMulOrderProp.square_le_mono_nonpos	344	12.599836	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZMulOrder.ZMulOrderProp.lt_mul_diag_l	344	13.646120	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZMulOrder.ZMulOrderProp.lt_mul_r	344	13.440206	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.opp_pos_neg	344	13.258577	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.opp_neg_pos	344	13.850933	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_m1_0	344	13.127041	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.square_lt_mono	344	12.897049	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.mul_le_mono_r	344	12.722830	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NAddOrder.NAddOrderProp.add_pos_r	344	12.207631	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZLt.ZOrderProp.lt_pred_lt	344	11.869663	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NOrder.NOrderProp.nlt_0_r	344	13.035534	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NOrder.NOrderProp.le_succ_le_pred	344	13.277165	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZMul.ZMulProp.mul_opp_r	344	13.115813	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZAdd.ZAddProp.add_opp_l	344	13.764718	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZAdd.ZAddProp.opp_inj_wd	344	12.998196	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZAdd.ZAddProp.eq_opp_r	344	12.056451	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Integer.Abstract.ZAdd.ZAddProp.sub_move_0_r	344	13.261628	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBase.NBaseProp.induction	344	12.599844	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Natural.Abstract.NBase.NBaseProp.case_analysis	344	12.012041	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZLog.NZLog2UpProp.log2_up_eqn0	344	51.729981	533	26
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZLog.NZLog2UpProp.log2_up_null	344	13.632403	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_1	344	12.802586	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_eqn0	344	51.664408	533	26
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_0	344	13.488204	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZParity.NZParityProp.negb_even	344	12.223720	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZDiv.NZDivProp.div_unique_exact	344	12.786963	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZDiv.NZDivProp.div_le_upper_bound	344	13.118934	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZGcd.NZGcdProp.gcd_unique	344	12.763227	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZGcd.NZGcdProp.gcd_comm	344	13.204473	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZGcd.NZGcdProp.gcd_diag_nonneg	344	11.818097	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_pos_cancel_l	344	13.607569	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.square_le_mono_nonneg	344	11.837120	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.nle_succ_diag_l	344	12.371360	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.le_preorder	344	11.273226	3	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.lt_le_trans	344	12.300146	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.le_le_succ_r	344	12.685704	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.lt_lt_succ_r	344	12.738504	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.succ_lt_mono	344	12.215661	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.lt_ge_cases	344	12.792698	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.le_dne	344	12.473961	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.Induction.Center.RightInduction.rbase	344	13.453894	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.Induction.Center.RightInduction.right_induction'	344	14.361216	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZOrder.NZOrderProp.Induction.le_ind	344	13.078578	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZAdd.NZAddProp.add_succ_comm	344	12.426605	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZAdd.NZAddProp.add_shuffle2	344	13.176010	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZBase.NZBaseProp.eq_stepl	344	11.671276	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_le_compat	344	12.954294	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.GenericMinMax.UsualMinMaxLogicalProperties.max_monotone	344	12.898547	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.GenericMinMax.UsualMinMaxLogicalProperties.min_max_antimonotone	344	12.641573	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersFacts.CompareFacts.compare_eq	344	13.098287	6	2	0.4	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : @t => let v2 : forall (v3 v4 : @t) (v5 : (v3 ?= v4) = @Eq), v3 == v4 := fun v3 v4 : @t => match compare_eq_iff v3 v4 as v5 in (_ /\ _) return (forall v6 : (v3 ?= v4) = @Eq, v3 == v4) with | conj v5 v6 => (fun (v5 : forall v6 : (v3 ?= v4) = @Eq, v3 == v4) (v6 : forall v7 : v3 == v4, (v3 ?= v4) = @Eq) => v5) v5 v6 end in v2 v0 v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_preorder	344	11.282443	3	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersFacts.OrderedTypeTest.lt_not_eq	344	11.843445	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersFacts.OrderedTypeTest.lt_le_trans	344	12.344965	3	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersFacts.OrderedTypeTest.le_antisym	344	12.671320	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersFacts.OrderedTypeTest.neq_sym	344	11.654044	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersFacts.OrderedTypeTest.gt_not_eq	344	11.821463	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_refl	344	346.565503	10270	273
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersTac.OrderFacts.eq_refl	344	11.881840	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersTac.OrderFacts.lt_irrefl	344	11.441015	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersTac.OrderFacts.neq_sym	344	11.723555	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrdersTac.OrderFacts.le_neq_lt	344	11.536501	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Structures.Orders.OTF_LtIsTotal.lt_total	344	12.266081	1	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.is_true_true	344	8.275634	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.not_false_is_true	344	9.781948	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.negbF	344	11.065372	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.negbLR	344	8.297925	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.contraFN	344	10.863287	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.contraNF	344	10.723753	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.BoolIf.if_same	344	10.326531	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.BoolIf.if_neg	344	10.500362	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.BoolIf.fun_if	344	10.582725	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.BoolIf.if_arg	344
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.BoolIf.ifE	344	9.437587	1	1	0	synth with cache (only 1: refine (erefl (@if_expr))).
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.ReflectCore.introTF	344	10.185507	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.ReflectCore.elimTF	344	12.080264	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.ReflectCore.equivPif	344	9.391122	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.ReflectCore.xorPif	344	12.070703	3	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.ReflectNegCore.introTFn	344	11.632965	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.ReflectNegCore.equivPifn	344	11.172099	3	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.ReflectNegCore.xorPifn	344	11.782836	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.Reflect.introT	344	9.854462	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.Reflect.introF	344	9.176905	3	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.Reflect.elimT	344
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.Reflect.elimF	344	9.856091	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.Reflect.elimN	344	10.089379	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.Reflect.elimNf	344	9.929279	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.Reflect.equivP	344	10.799958	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.Reflect.appP	344	11.637893	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.Reflect.decPcases	344	8.472814	1	1	0	synth with cache (only 1: refine match @Pb as v1 in (reflect _ v0) return match v0 as v2 in bool return Prop with | true => @P | false => ~ @P end with | ReflectF _ v0 => id v0 | ReflectT _ v0 => id v0 end).
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.unlessR	344	9.916344	4	2	1.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 v1 : Type => Implies (fun (v2 : v1) (v3 : Prop) (v4 : forall v5 : v0, v3) (v5 : forall v6 : v1, v3) => (id : (forall v6 : v3, v3)) (v5 v2)))).
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.bind_unless	344	11.344992	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.unless_contra	344	11.726813	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.classic_EM	344	10.952820	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.ReflectConnectives.implyP	344	12.295408	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.andbT	344	10.643498	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.andbb	344	8.923675	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.orFb	344	9.807772	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.orbF	344	10.289355	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.orbb	344	10.219102	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.andNb	344	10.472129	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.orNb	344	10.473148	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.implybb	344	10.442147	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.addFb	344	10.144985	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.addTb	344	9.943016	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun v0 : @bool => erefl (~~ v0))).
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.addbT	344	9.164232	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.subrelUl	344	12.028226	3	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.sub_refl	344	10.627442	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.PredicateSimplification.mem_topred	344	11.458124	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.PredicateSimplification.unfold_in	344	10.628224	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.KeyPred.keyed_predE	344	12.873137	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.RelationProperties.symmetric_from_pre	344	11.372232	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.rev_trans	344	11.138698	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.LocalGlobal.in3T	344	12.104910	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.LocalGlobal.on1T	344	11.064063	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.LocalGlobal.on1lT	344	9.741313	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.LocalGlobal.on2T	344	11.087722	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.LocalGlobal.canRL_in	344	12.657197	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.LocalGlobal.canLR_on	344	12.615411	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.sub_in3	344	9.941672	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : Type) (v1 v2 : mem_pred v0) (v3 : forall v4 v5 v6 : v0, Prop) (v4 : sub_mem v1 v2) => sub_in111 v4 v4 v4)).
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.sub_in12	344	13.007324	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 v1 : Type) (v2 v3 : mem_pred v0) (v4 v5 : mem_pred v1) (v6 : forall (v7 : v0) (v8 v9 : v1), Prop) (v7 : sub_mem v2 v3) (v8 : sub_mem v4 v5) => sub_in111 v7 v8 v8)).
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.MonoHomoMorphismTheory.monoW	344	10.730154	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.MonoHomoMorphismTheory.homoRL	344	14.427343	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Setoids.Setoid.gen_st	344	9.378090	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Equivalence.pointwise_reflexive	344	10.150203	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Equivalence.pointwise_equivalence	344	10.336645	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CEquivalence.equiv_transitive_obligation_1	344	9.987501	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CEquivalence.pointwise_reflexive	344	10.306469	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.Proper.proper_proper_proxy	344	7.759344	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.Relations.subrelation_respectful	344
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.Relations.subrelation_proper	344	10.121367	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.GenericInstances.respectful_per_obligation_2	344
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.GenericInstances.trans_co_impl_morphism_obligation_1	344	8.526481	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.GenericInstances.per_partial_app_morphism_obligation_1	344	10.712136	5	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.GenericInstances.flip1	344	9.534694	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.GenericInstances.flip2	344	9.752111	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.GenericInstances.proper_eq	344
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.proper_sym_flip	344	8.646051	1	1	0	synth with cache (only 1: refine (fun (v0 : Type) (v1 : relation v0) (v2 : symmetric v0 v1) (v3 : Type) (v4 : relation v3) (v5 : forall v6 : v0, v3) (v6 : ProperProxy (v1 ==> v4) v5) => (fun (v7 v8 : v0) (v9 : v1 v7 v8) => v6 v8 v7 (v2 v7 v8 v9)) : ProperProxy (v1 ==> flip v4) v5)).
+coq-tactician-stdlib.8.11.dev	Coq.Classes.Morphisms.proper_sym_impl_iff_2	344	10.874224	1	1	0	synth with cache (only 1: refine (fun (v0 : Type) (v1 : relation v0) (v2 : symmetric v0 v1) (v3 : Type) (v4 : relation v3) (v5 : symmetric v3 v4) (v6 : forall (v7 : v0) (v8 : v3), Prop) (v7 : ProperProxy (v1 ==> v4 ==> @impl) v6) => (fun (v8 v9 : v0) (v10 : v1 v8 v9) => (fun (v11 v12 : v3) (v13 : v4 v11 v12) => conj (fun v14 : v6 v8 v11 => v7 v8 v9 v10 v11 v12 v13 v14) (fun v14 : v6 v9 v12 => v7 v9 v8 (v2 v8 v9 v10) v12 v11 (v5 v11 v12 v13) v14)) : (v4 ==> @iff) (v6 v8) (v6 v9)) : ProperProxy (v1 ==> v4 ==> @iff) v6)).
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CMorphisms.Proper.reflexive_proper_proxy	344	9.359204	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : crelation (@A)) (v1 : Reflexive v0) (v2 : @A) => (fun v3 : v0 v2 v2 => v3) (v1 v2))).
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CMorphisms.iff_flip_impl_subrelation	344	9.515183	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CMorphisms.iffT_flip_arrow_subrelation	344	8.288862	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CMorphisms.GenericInstances.respectful_per_obligation_2	344	10.695629	7	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CMorphisms.GenericInstances.flip_proper_obligation_1	344
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CMorphisms.GenericInstances.trans_sym_contra_arrow_morphism_obligation_1	344	10.714863	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CMorphisms.GenericInstances.reflexive_eq_dom_reflexive	344	8.870218	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CMorphisms.GenericInstances.proper_eq	344	9.418319	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : Type) (v1 : v0) => reflexive_proper v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CMorphisms.Normalize.proper_normalizes_proper	344	9.845472	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero	344	11.503571	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero_right	344	10.528285	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_idempotent	344	11.339905	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_add	344	10.644517	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Intersection_Empty_set_l	344	10.609805	1	1	0	synth with cache (only 1: refine (fun (v0 : Type) (v1 : Ensemble v0) => Extensionality_Ensembles v0 (Intersection v0 (Empty_set v0) v1) (Empty_set v0) (conj (Intersection_decreases_l v0 (Empty_set v0) v1) (Empty_set_minimal v0 (Intersection v0 (Empty_set v0) v1)) : Same_set v0 (Intersection v0 (Empty_set v0) v1) (Empty_set v0)))).
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Seminus_Empty_set_l	344	12.077929	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Relations.inverse_image_of_eq	344	9.183087	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrsetoid.compat_Reflexive	344	9.074078	2	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.Injections.canLR	344	9.963769	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.of_voidK	344	10.116446	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.esymK	344	11.919086	2	2	0.0	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : Type) (v1 v2 : v0) (v3 : v1 = v2) => (fun v4 : (fun (v5 : v0) (v6 : v1 = v5) => esym (esym v6) = v6) v1 (erefl v1) => match v3 as v6 in (_ = v5) return ((fun (v7 : v0) (v8 : v1 = v7) => esym (esym v8) = v8) v5 v6) with | erefl => v4 end) (erefl (erefl v1)))).
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.etrans_id	344	11.801831	5	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.InjectionsTheory.inj_can_sym	344	9.708301	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.InjectionsTheory.eq_inj	344	11.508948	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.InjectionsTheory.inj_can_eq	344	11.345809	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.Bijections.bij_inj	344	10.575467	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.Bijections.bij_can_eq	344	11.492324	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.BijectionsTheory.bij_can_bij	344	9.408529	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset.The_power_set_partial_order.Empty_set_minimal	344	10.048841	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : Type) (v1 : Ensemble v0) => (fun (v2 : v0) (v3 : In v0 (Empty_set v0) v2) => Empty_set_ind v0 (fun v4 : v0 => In v0 v1 v4) v2 v3) : Included v0 (Empty_set v0) v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset.The_power_set_partial_order.Inclusion_is_transitive	344	10.055964	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset.The_power_set_partial_order.Union_minimal	344	10.763797	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset.The_power_set_partial_order.Intersection_maximal	344	10.715379	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset.The_power_set_partial_order.Intersection_decreases_l	344	10.587855	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset.The_power_set_partial_order.Intersection_decreases_r	344	9.118194	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Relations_3_facts.Noetherian_contains_Noetherian	344	10.023045	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Wellfounded.Union.WfUnion.wf_union	344	10.899218	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Clos_Refl_Trans.clos_rt_idempotent	344	12.118960	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_rt_t	344	12.603142	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_rst_is_equiv	344	10.195508	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_rst_idempotent	344	12.690905	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Equivalences.clos_t1n_trans	344	9.990286	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Equivalences.clos_rtn1_step	344	10.030861	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Equivalences.clos_rtn1_rt	344	11.203188	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Equivalences.clos_rt_rtn1	344	12.670763	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Equivalences.clos_rt_rtn1_iff	344	10.639776	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Equivalences.clos_rst1n_rst	344	11.086417	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Equivalences.clos_rst1n_trans	344	11.990305	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Equivalences.clos_rst_rst1n	344	12.564170	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Equivalences.clos_rstn1_rst	344	12.347147	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Relations.Operators_Properties.Properties.Equivalences.clos_rstn1_trans	344	11.230049	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.RelationClasses.Defs.StrictOrder_Asymmetric	344	8.792682	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.RelationClasses.Defs.flip.flip_Reflexive	344	9.609771	2	2	0.0	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : relation (@A)) (v1 : Reflexive v0) => v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Classes.RelationClasses.Defs.flip.flip_Antisymmetric	344	11.379711	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : relation (@A)) (v1 : Equivalence v0) (v2 : relation (@A)) (v3 : Antisymmetric v0 v2) => (fun (v4 v5 : @A) (v6 : flip v2 v4 v5) (v7 : flip v2 v5 v4) => (fun v8 : forall (v9 : @A) (v10 : v2 v5 v9) (v11 : v2 v9 v5), v0 v5 v9 => (fun v9 : forall (v10 : v2 v5 v4) (v11 : v2 v4 v5), v0 v5 v4 => (fun v10 : forall v11 : v2 v4 v5, v0 v5 v4 => (fun v11 : v0 v5 v4 => (fun v12 : forall (v13 : @A) (v14 : v2 v4 v13) (v15 : v2 v13 v4), v0 v4 v13 => v3 v4 v5 v7 v6) (v3 v4)) (v10 v7)) (v9 v6)) (v8 v4)) (v3 v5)) : Antisymmetric v0 (flip v2))).
+coq-tactician-stdlib.8.11.dev	Coq.Classes.RelationClasses.Defs.flip.flip_StrictOrder	344	11.122381	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.RelationClasses.Defs.complement.complement_Symmetric	344	8.844926	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : relation (@A)) (v1 : Symmetric v0) => (fun (v2 v3 : @A) (v4 : complement v0 v2 v3) => (fun v5 : v0 v3 v2 => (fun v6 : forall (v7 : @A) (v8 : v0 v3 v7), v0 v7 v3 => (fun v7 : forall v8 : v0 v3 v3, v0 v3 v3 => (fun v8 : forall v9 : v0 v3 v2, v0 v2 v3 => (fun v9 : v0 v2 v3 => (fun v10 : @False => v10) (v4 v9)) (v8 v5)) (v6 v2)) (v6 v3)) (v1 v3)) : complement v0 v3 v2) : Symmetric (complement v0))).
+coq-tactician-stdlib.8.11.dev	Coq.Program.Equality.JMeq_eq_refl	344	9.368319	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Program.Equality.UIP_refl_refl	344	10.392949	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CRelationClasses.Defs.flip.flip_Reflexive	344	9.375569	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : crelation (@A)) (v1 : Reflexive v0) => v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CRelationClasses.Defs.flip.flip_StrictOrder	344	11.166665	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CRelationClasses.Defs.complement.complement_Symmetric	344	10.198809	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : crelation (@A)) (v1 : Symmetric v0) => (fun (v2 v3 : @A) (v4 : complement v0 v2 v3) => (fun v5 : v0 v3 v2 => (fun v6 : forall (v7 : @A) (v8 : v0 v3 v7), v0 v7 v3 => (fun v7 : forall v8 : v0 v3 v3, v0 v3 v3 => (fun v8 : forall v9 : v0 v3 v2, v0 v2 v3 => (fun v9 : v0 v2 v3 => (fun v10 : @False => v10) (v4 v9)) (v8 v5)) (v6 v2)) (v6 v3)) (v1 v3)) : complement v0 v3 v2) : Symmetric (complement v0))).
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CRelationClasses.Binary.relation_implication_preorder	344	8.932432	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Finite_sets.Ensembles_finis_facts.cardinal_elim	344	12.459415	4	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssreflect.lock	344	9.866074	3	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssreflect.unlock	344	8.564004	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : Type) (v1 : v0) (v2 : unlockable v1) => (fun v3 : forall (v4 : v0) (v5 : v4 = v1), (fun v6 : unlockable v1 => unlocked v6 = v1) (Unlockable v5) => match v2 as v4 in (unlockable _) return ((fun v5 : unlockable v1 => unlocked v5 = v1) v4) with | @Unlockable _ _ v4 v5 => v3 v4 v5 end) (fun (v3 : v0) (v4 : v3 = v1) => v4))).
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssreflect.ApplyIff.iffLR	344	10.792344	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 v1 : Prop) (v2 : v0 <-> v1) => (fun v3 : forall (v4 : forall v5 : v0, v1) (v5 : forall v6 : v1, v0), (fun v6 : (forall v7 : v0, v1) /\ (forall v7 : v1, v0) => forall v7 : v0, v1) (conj v4 v5) => match v2 as v4 in (_ /\ _) return ((fun v5 : (forall v6 : v0, v1) /\ (forall v6 : v1, v0) => forall v6 : v0, v1) v4) with | conj v4 v5 => v3 v4 v5 end) (fun (v3 : forall v4 : v0, v1) (v4 : forall v5 : v1, v0) => v3))).
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssreflect.ApplyIff.iffRLn	344	10.570974	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 v1 : Prop) (v2 : v0 <-> v1) (v3 : ~ v1) (v4 : v0) => (fun v5 : v1 => match v3 v5 as v6 in False return ((fun v7 : @False => @False) v6) with end) ((fun v5 : forall (v6 : forall v7 : v0, v1) (v7 : forall v8 : v1, v0), (fun v8 : (forall v9 : v0, v1) /\ (forall v9 : v1, v0) => forall v9 : v0, v1) (conj v6 v7) => match v2 as v6 in (_ /\ _) return ((fun v7 : (forall v8 : v0, v1) /\ (forall v8 : v1, v0) => forall v8 : v0, v1) v6) with | conj v6 v7 => v5 v6 v7 end) (fun (v5 : forall v6 : v0, v1) (v6 : forall v7 : v1, v0) => v5) v4))).
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Uniset.defs.treesort_twist2	344	11.192829	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Relations_2_facts.Rplus_contains_R	344	7.650609	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Relations_2_facts.Rstar_contains_Rplus	344	10.054560	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Relations_2_facts.Rstar_transitive	344	10.142441	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Wellfounded.Transitive_Closure.Wf_Transitive_Closure.Acc_inv_trans	344	12.064922	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.JMeq.JMeq_rec	344	7.860443	1	1	0	synth with cache (only 1: refine (fun (v0 : Type) (v1 : v0) (v2 : forall v3 : v0, Set) (v3 : v2 v1) (v4 : v0) (v5 : JMeq v1 v4) => match JMeq_eq v5 as v7 in (_ = v6) return (v2 v6) with | eq_refl => v3 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.JMeq.JMeq_rect	344	9.134609	1	1	0	synth with cache (only 1: refine (fun (v0 : Type) (v1 : v0) (v2 : forall v3 : v0, Type) (v3 : v2 v1) (v4 : v0) (v5 : JMeq v1 v4) => match JMeq_eq v5 as v7 in (_ = v6) return (v2 v6) with | eq_refl => v3 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.JMeq.eq_dep_id_JMeq	344
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Extension	344	9.197651	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Noone_in_empty	344	9.509142	3	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Add_intro1	344	9.162459	1	1	0	synth with cache (only 1: refine ((fun (v0 : Ensemble (@U)) (v1 v2 : @U) (v3 : In (@U) v0 v2) => Union_introl (@U) v0 (Singleton (@U) v1) v2 v3) : forall (v0 : Ensemble (@U)) (v1 v2 : @U) (v3 : In (@U) v0 v2), In (@U) (Add (@U) v0 v1) v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Add_not_Empty	344	9.452617	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Singleton_intro	344	8.163420	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.HLevels.forall_hprop	344	9.238807	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.HLevels.true_hprop	344	9.285803	1	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrunder.Under_rel.Under_rel_from_rel	344	8.842168	1	1	0	synth with cache (only 1: refine (fun (v0 : Type) (v1 : forall v2 v3 : v0, Prop) (v2 v3 : v0) (v4 : Under_rel v0 v1 v2 v3) => v4)).
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrunder.Under_rel.Under_relE	344	7.707622	3	2	0.1	synth with cache (only 1: repeat match goal with | H:_ |- _ => revert H end; only 1: refine (fun (v0 : Type) (v1 : forall v2 v3 : v0, Prop) => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Eqdep_dec.EqdepDec.trans_sym_eq	344	9.164382	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : @A) (v2 : v0 = v1) => match v2 as v4 in (_ = v3) return (comp v4 v4 = eq_refl) with | eq_refl => eq_refl end)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Hurkens.NoRetractToModalProposition.Paradox.modal	344	10.349842	3	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Hurkens.PropNeqType.paradox	344	9.973428	1	1	0	synth with cache (only 1: refine ((fun v0 : Prop = Type => TypeNeqSmallType.paradox (Prop : Type) (eq_sym v0 : Type = (Prop : Type))) : Prop <> Type)).
+coq-tactician-stdlib.8.11.dev	Coq.Lists.Streams.Streams.Str_nth_plus	344	8.185213	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Lists.Streams.Streams.Stream_Properties.ForAll_Str_nth_tl	344	9.568457	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Lists.Streams.Map.Str_nth_map	344	9.716501	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Berardi.Berardis_paradox.Retracts.AC	344	8.897883	1	1	0	synth with cache (only 1: refine (fun v0 : @retract_cond => inv2 v0)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Berardi.Berardis_paradox.classical_proof_irrelevance	344	9.772894	4	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ExtensionalityFacts.diagonal_inverse1	344	8.449635	3	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.PropExtensionalityFacts.PropExt_and_PropFunExt_imp_PredExt	344	9.165702	1	1	0	synth with cache (only 1: refine (fun (v0 : forall (v1 v2 : Prop) (v3 : v1 <-> v2), v1 = v2) (v1 : forall (v2 : Type) (v3 : forall v4 : v2, Prop) (v4 : forall v5 : v2, Prop) (v5 : forall v6 : v2, v3 v6 = v4 v6), v3 = v4) (v2 : Type) (v3 : forall v4 : v2, Prop) (v4 : forall v5 : v2, Prop) (v5 : forall v6 : v2, v3 v6 <-> v4 v6) => v1 v2 v3 v4 (fun v6 : v2 => v0 (v3 v6) (v4 v6) (v5 v6)))).
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Relations_1_facts.Equiv_from_order	344	9.307367	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Relations_1_facts.contains_is_preorder	344	8.253073	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Relations_1_facts.same_relation_is_equivalence	344	8.768853	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Relations_1_facts.cong_reflexive_same_relation	344	9.853261	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Wellfounded.Inverse_Image.Inverse_Image.wf_inverse_image	344
+coq-tactician-stdlib.8.11.dev	Coq.Wellfounded.Inverse_Image.Inverse_Image.Acc_inverse_rel	344	9.513316	3	2
+coq-tactician-stdlib.8.11.dev	Coq.Wellfounded.Inverse_Image.Inverse_Image.wf_inverse_rel	344	10.790609	3	2
+coq-tactician-stdlib.8.11.dev	Coq.Program.Combinators.compose_id_left	344	9.026587	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : Type) (v2 : forall v3 : v0, v1) => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Program.Combinators.compose_id_right	344	7.476235	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : Type) (v2 : forall v3 : v0, v1) => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Program.Combinators.flip_flip	344	8.967490	1	1	0	synth with cache (only 1: refine (fun v0 v1 v2 : Type => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Program.Combinators.prod_uncurry_curry	344	9.163730	1	1	0	synth with cache (only 1: refine (fun v0 v1 v2 : Type => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Decidable.not_and	344	8.884145	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Decidable.not_false_iff	344	8.799259	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Decidable.not_or_iff	344	10.506429	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.ProofIrrelevanceFacts.ProofIrrelevanceTheory.Eq_rect_eq.eq_rect_eq	344	7.451210	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.diff_true_false	344	8.824687	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.eq_true_false_abs	344	9.776522	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.negb_involutive_reverse	344	9.378854	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.negb_sym	344	10.589283	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.eqb_negb2	344	7.774157	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.negb_false_iff	344	10.634430	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.orb_comm	344	10.406912	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.andb_false_r	344	7.956493	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.negb_xorb_r	344	9.964748	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.eq_true_iff_eq	344	10.336519	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.eq_true_not_negb	344	9.914632	1	1	0	synth with cache (only 1: refine (fun (v0 : @bool) (v1 : v0 <> @true) => match v0 as v2 in bool return (forall v3 : v2 <> @true, negb v2 = @true) with | true => fun v2 : @true <> @true => (let v3 : @False := let v4 : @true = @true := eq_refl in v2 v4 in (fun v4 : @False => False_ind (@false = @true) v4) v3) : negb (@true) = @true | false => fun v2 : @false <> @true => eq_refl : negb (@false) = @true end v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.absurd_eq_true	344	7.655985	1	1	0	synth with cache (only 1: refine (fun (v0 : @bool) (v1 : @False) => False_ind (v0 = @true) v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.negb_prop_classical	344	9.476693	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.negb_prop_involutive	344	9.610560	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.reflect_iff	344	10.408611	1	1	0	synth with cache (only 1: refine (fun (v0 : Prop) (v1 : @bool) (v2 : reflect v0 v1) => match v2 as v4 in (reflect _ v3) return (v0 <-> v3 = @true) with | ReflectT _ v3 => (fun v3 : v0 => conj (fun v4 : v0 => eq_refl) (fun v4 : @true = @true => v3)) v3 | ReflectF _ v3 => (fun v3 : ~ v0 => conj (fun v4 : v0 => let v5 : @False := v3 v4 in False_ind (@false = @true) v5) (fun v4 : @false = @true => let v5 : @False := eq_ind (@false) (fun v6 : @bool => match v6 as v7 in bool return Prop with | true => @False | false => @True end) (@I) (@true) v4 in False_ind v0 v5)) v3 end)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.FunctionalExtensionality.equal_f	344	7.773341	1	1	0	synth with cache (only 1: refine (fun (v0 v1 : Type) (v2 : forall v3 : v0, v1) (v3 : forall v4 : v0, v1) (v4 : v2 = v3) (v5 : v0) => eq_ind_r (fun v6 : forall v7 : v0, v1 => v6 v5 = v3 v5) eq_refl v4)).
+coq-tactician-stdlib.8.11.dev	Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep1_dep	344	10.457162	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.EqdepFacts.eq_sigT_eq_dep	344	9.844449	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.EqdepFacts.eq_sig_eq_dep	344	9.965874	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Init.Peano.pred_Sn	344	2.539726	1	1	0	synth with cache (only 1: refine ((fun v0 : @nat => eq_refl) : forall v0 : @nat, v0 = Nat.pred (S v0))).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Peano.plus_O_n	344	1.491729	1	1	0	synth with cache (only 1: refine (fun v0 : @nat => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Peano.mult_n_O	344	3.536005	1	1	0	synth with cache (only 1: refine (fun v0 : @nat => nat_ind (fun v1 : @nat => 0 = v1 * 0) (eq_refl : 0 = 0 * 0) (fun (v1 : @nat) (v2 : 0 = v1 * 0) => v2 : 0 = S v1 * 0) v0)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Peano.le_S_n	344	1.603409	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Init.Peano.le_n_S	344	3.046673	2	1
+coq-tactician-stdlib.8.11.dev	Coq.Init.Peano.nat_double_ind	344	2.297164	1	1	0	synth with cache (only 1: refine (fun (v0 : forall v1 v2 : @nat, Prop) (v1 : forall v2 : @nat, v0 0 v2) (v2 : forall v3 : @nat, v0 (S v3) 0) (v3 : forall (v4 v5 : @nat) (v6 : v0 v4 v5), v0 (S v4) (S v5)) (v4 : @nat) => nat_ind (fun v5 : @nat => forall v6 : @nat, v0 v5 v6) v1 (fun (v5 : @nat) (v6 : forall v7 : @nat, v0 v5 v7) (v7 : @nat) => match v7 as v8 in nat return (v0 (S v5) v8) with | 0 => v2 v5 | S v8 => (fun v8 : @nat => v3 v5 v8 (v6 v8)) v8 end) v4)).
